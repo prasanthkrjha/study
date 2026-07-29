@@ -94,6 +94,11 @@ export interface RoadmapData {
   weeklyTimeBudget: TableData | null;
 }
 
+export interface PracticeLink {
+  label: string;
+  url: string;
+}
+
 export interface Unit {
   id: string; // e.g. "1.2"
   moduleNumber: number;
@@ -103,6 +108,7 @@ export interface Unit {
   secondaryResource?: string;
   doneCriteria?: string;
   tier: Tier;
+  practiceLinks: PracticeLink[];
   raw: string;
 }
 
@@ -140,5 +146,6 @@ export interface StudyData {
   roadmap: RoadmapData;
   syllabus: SyllabusData;
   links: SmartLink[];
+  lessons: Record<string, string>;
   generatedAt: string;
 }

@@ -15,7 +15,10 @@ import type {
   Tier,
   ChecklistItem,
   RoadmapSection,
+  PracticeLink,
 } from "../src/types/content";
+
+export type PracticeLinksMap = Record<string, PracticeLink[]>;
 import type { Content } from "mdast";
 
 function tierFromEmoji(text: string): Tier {
@@ -44,7 +47,12 @@ function parseCurriculumMap(markdown: string) {
   return tableToData(tables[0]);
 }
 
-function parseUnitsFromModule(moduleRaw: string, moduleNumber: number, moduleTier: Tier): Unit[] {
+function parseUnitsFromModule(
+  moduleRaw: string,
+  moduleNumber: number,
+  moduleTier: Tier,
+  practiceLinks: PracticeLinksMap
+): Unit[] {
   const root = parseMd(moduleRaw);
   const tables = findTables(root.children);
   const units: Unit[] = [];
@@ -71,15 +79,21 @@ function parseUnitsFromModule(moduleRaw: string, moduleNumber: number, moduleTie
         .split(",")
         .map((c) => c.trim())
         .filter(Boolean);
+      const cellOrUndefined = (idx: number) => {
+        if (idx < 0) return undefined;
+        const val = (row[idx] ?? "").trim();
+        return val && val !== "—" && val !== "-" ? val : undefined;
+      };
       units.push({
         id,
         moduleNumber,
         title: unitTitle.trim(),
         concepts,
-        primaryResource: primaryIdx >= 0 ? row[primaryIdx] : undefined,
-        secondaryResource: secondaryIdx >= 0 ? row[secondaryIdx] : undefined,
-        doneCriteria: doneIdx >= 0 ? row[doneIdx] : undefined,
+        primaryResource: cellOrUndefined(primaryIdx),
+        secondaryResource: cellOrUndefined(secondaryIdx),
+        doneCriteria: cellOrUndefined(doneIdx),
         tier: tierIdx >= 0 ? tierFromText(row[tierIdx] ?? "") : moduleTier,
+        practiceLinks: practiceLinks[id] ?? [],
         raw: JSON.stringify(row),
       });
     }
@@ -87,7 +101,7 @@ function parseUnitsFromModule(moduleRaw: string, moduleNumber: number, moduleTie
   return units;
 }
 
-function parseModules(markdown: string): Module[] {
+function parseModules(markdown: string, practiceLinks: PracticeLinksMap): Module[] {
   const moduleSections = sectionsAtDepth(markdown, 2).filter((s) =>
     /^MODULE\s+\d+/i.test(s.title)
   );
@@ -111,7 +125,7 @@ function parseModules(markdown: string): Module[] {
       title,
       tier,
       objective,
-      units: parseUnitsFromModule(section.raw, number, tier),
+      units: parseUnitsFromModule(section.raw, number, tier, practiceLinks),
       raw: section.raw,
     };
   });
@@ -160,7 +174,7 @@ function parseGenericSections(markdown: string): RoadmapSection[] {
     }));
 }
 
-export function parseSyllabus(markdown: string): SyllabusData {
+export function parseSyllabus(markdown: string, practiceLinks: PracticeLinksMap = {}): SyllabusData {
   const headings = headingsWithOffsets(markdown);
   const h1 = headings.find((h) => h.depth === 1);
   const title = h1 ? h1.text : "Syllabus";
@@ -173,7 +187,7 @@ export function parseSyllabus(markdown: string): SyllabusData {
     title,
     subtitle,
     curriculumMap: parseCurriculumMap(markdown),
-    modules: parseModules(markdown),
+    modules: parseModules(markdown, practiceLinks),
     appendixChecklist: parseAppendixChecklist(markdown),
     sections: parseGenericSections(markdown),
   };

@@ -43,7 +43,7 @@ export function buildSearchIndex(): SearchItem[] {
         id: unit.id,
         title: `${unit.id} ${unit.title}`,
         subtitle: unit.concepts.join(", "),
-        href: `/syllabus/${mod.id}#unit-${unit.id.replace(".", "-")}`,
+        href: `/learn/${unit.id}`,
         group: "Syllabus",
       });
     }

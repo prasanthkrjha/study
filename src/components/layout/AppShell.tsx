@@ -6,6 +6,7 @@ import { Topbar } from "./Topbar";
 import { CommandPalette } from "./CommandPalette";
 import { PomodoroWidget } from "@/components/shared/PomodoroWidget";
 import { PomodoroTicker } from "@/components/shared/PomodoroTicker";
+import { ServiceWorkerRegister } from "@/components/shared/ServiceWorkerRegister";
 import { cn } from "@/lib/utils";
 
 export function AppShell({ children }: { children: React.ReactNode }) {
@@ -36,6 +37,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
       <CommandPalette />
       <PomodoroWidget />
       <PomodoroTicker />
+      <ServiceWorkerRegister />
     </div>
   );
 }

@@ -3,7 +3,11 @@ import type { StudyData } from "@/types/content";
 
 export const studyData = raw as unknown as StudyData;
 
-export const { roadmap, syllabus, links } = studyData;
+export const { roadmap, syllabus, links, lessons } = studyData;
+
+export function getLesson(unitId: string): string | undefined {
+  return lessons[unitId];
+}
 
 export function allUnits() {
   return syllabus.modules.flatMap((m) => m.units);

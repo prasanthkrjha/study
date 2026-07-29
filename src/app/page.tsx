@@ -155,8 +155,8 @@ export default function DashboardPage() {
                 <span className="flex items-center gap-2 text-muted">
                   <Brain className="h-4 w-4" /> Current syllabus unit
                 </span>
-                <Link href={`/syllabus/${cmu.module.id}#unit-${cmu.unit.id.replace(".", "-")}`} className="text-xs text-accent hover:underline">
-                  Open unit
+                <Link href={`/learn/${cmu.unit.id}`} className="text-xs text-accent hover:underline">
+                  Study unit
                 </Link>
               </div>
               <div className="rounded-xl border border-border bg-surface-2 px-4 py-3">

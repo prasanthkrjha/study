@@ -6,7 +6,7 @@ import { ChevronDown, ArrowRightCircle, StickyNote } from "lucide-react";
 import type { Week } from "@/types/content";
 import { useStudyStore } from "@/lib/store";
 import { taskId, weekProgress } from "@/lib/progress";
-import { linkForTask, moduleIdForNumber } from "@/lib/data";
+import { linkForTask } from "@/lib/data";
 import { Checkbox } from "@/components/shared/Checkbox";
 import { BookmarkButton } from "@/components/shared/BookmarkButton";
 import { cn } from "@/lib/utils";
@@ -74,10 +74,10 @@ export function WeekAccordion({ week, defaultOpen = false }: { week: Week; defau
                   <p className={cn("mt-1", completed[id] && "line-through")}>{task.text}</p>
                   {link && (
                     <Link
-                      href={`/syllabus/${moduleIdForNumber(link.moduleNumber)}#unit-${link.unitId.replace(".", "-")}`}
+                      href={`/learn/${link.unitId}`}
                       className="mt-1.5 inline-flex items-center gap-1 text-xs font-medium text-accent hover:underline"
                     >
-                      <ArrowRightCircle className="h-3.5 w-3.5" /> Open Unit {link.unitId} in syllabus
+                      <ArrowRightCircle className="h-3.5 w-3.5" /> Study Unit {link.unitId}
                     </Link>
                   )}
                 </div>

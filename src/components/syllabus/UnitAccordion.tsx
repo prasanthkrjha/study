@@ -2,11 +2,11 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { ChevronDown, ArrowLeftCircle, ExternalLink, StickyNote } from "lucide-react";
+import { ChevronDown, ArrowLeftCircle, ExternalLink, StickyNote, BookOpenText } from "lucide-react";
 import type { Unit } from "@/types/content";
 import { useStudyStore } from "@/lib/store";
 import { conceptId, unitProgress } from "@/lib/progress";
-import { linksForUnit } from "@/lib/data";
+import { linksForUnit, getLesson } from "@/lib/data";
 import { Checkbox } from "@/components/shared/Checkbox";
 import { TierBadge } from "@/components/shared/TierBadge";
 import { BookmarkButton } from "@/components/shared/BookmarkButton";
@@ -20,6 +20,7 @@ export function UnitAccordion({ unit, defaultOpen = false }: { unit: Unit; defau
   const up = unitProgress(unit, completed);
   const roadmapLinks = linksForUnit(unit.id);
   const anchorId = `unit-${unit.id.replace(".", "-")}`;
+  const hasLesson = !!getLesson(unit.id);
 
   return (
     <div id={anchorId} className="scroll-mt-24 overflow-hidden rounded-2xl border border-border bg-surface">
@@ -41,6 +42,15 @@ export function UnitAccordion({ unit, defaultOpen = false }: { unit: Unit; defau
             <div className="h-full rounded-full bg-accent-2 transition-all" style={{ width: `${up.pct}%` }} />
           </div>
         </button>
+        {hasLesson && (
+          <Link
+            href={`/learn/${unit.id}`}
+            onClick={(e) => e.stopPropagation()}
+            className="mr-1 flex shrink-0 items-center gap-1.5 rounded-lg bg-accent px-3 py-1.5 text-xs font-semibold text-white hover:brightness-110"
+          >
+            <BookOpenText className="h-3.5 w-3.5" /> Study
+          </Link>
+        )}
         <BookmarkButton id={`unit:${unit.id}`} label={`${unit.id} ${unit.title}`} href={`#${anchorId}`} className="mr-3" />
       </div>
 
@@ -67,6 +77,24 @@ export function UnitAccordion({ unit, defaultOpen = false }: { unit: Unit; defau
               <p className="flex items-start gap-1.5 text-muted">
                 <ExternalLink className="mt-0.5 h-3.5 w-3.5 shrink-0" /> {unit.primaryResource}
               </p>
+            </div>
+          )}
+          {unit.practiceLinks.length > 0 && (
+            <div>
+              <h3 className="mb-1.5 text-xs font-semibold uppercase tracking-wide text-muted">Practice &amp; Links</h3>
+              <div className="flex flex-wrap gap-2">
+                {unit.practiceLinks.map((pl) => (
+                  <a
+                    key={pl.url}
+                    href={pl.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-1 rounded-full border border-border bg-surface-2 px-2.5 py-1 text-xs font-medium text-accent hover:border-accent/40"
+                  >
+                    <ExternalLink className="h-3 w-3" /> {pl.label}
+                  </a>
+                ))}
+              </div>
             </div>
           )}
           {unit.secondaryResource && (

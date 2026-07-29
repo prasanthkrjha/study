@@ -140,8 +140,8 @@ export const useStudyStore = create<StudyStore>()(
       pomodoro: {
         isRunning: false,
         mode: "focus",
-        secondsLeft: 25 * 60,
-        focusMinutes: 25,
+        secondsLeft: 60 * 60,
+        focusMinutes: 60,
         breakMinutes: 5,
         sessionsCompletedToday: 0,
         lastSessionDate: null,
@@ -213,8 +213,8 @@ export const useStudyStore = create<StudyStore>()(
           pomodoro: {
             isRunning: false,
             mode: "focus",
-            secondsLeft: 25 * 60,
-            focusMinutes: 25,
+            secondsLeft: 60 * 60,
+            focusMinutes: 60,
             breakMinutes: 5,
             sessionsCompletedToday: 0,
             lastSessionDate: null,
