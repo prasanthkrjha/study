@@ -1,0 +1,3020 @@
+{
+  "roadmap": {
+    "title": "Full Stack + AI Engineering Roadmap — 6 Months",
+    "subtitle": "Full Stack Developer–ready everywhere, AI Engineer–ready for the growing category of applied-AI/GenAI roles",
+    "meta": {
+      "Prepared for": "Prasanth Kumar Jha",
+      "Based on": "current resume (ATS version) + live job postings + broader July 2026 India tech-hiring data (HireDoor, Taggd, AccioJob) + your actual GitHub/portfolio",
+      "Window": "6 months, working full-time (10 AM–7/8 PM weekdays)",
+      "Goal": "Full Stack Developer–ready everywhere, AI Engineer–ready for the growing category of applied-AI/GenAI roles"
+    },
+    "toc": [
+      {
+        "title": "Part 1 — Where You Stand Today",
+        "children": [
+          "1.1 Strengths & transferable skills",
+          "1.2 Gap analysis: Full Stack track",
+          "1.3 Gap analysis: AI Engineering track",
+          "1.4 Skill tiers: essential / recommended / optional",
+          "1.5 Interview-ready vs. needs-work",
+          "1.6 The strategic call: AI Engineer, not ML Engineer — and why"
+        ]
+      },
+      {
+        "title": "Part 2 — Reality Check",
+        "children": [
+          "2.1 What 6 months can realistically buy you",
+          "2.2 Your weekly time budget",
+          "2.3 Trade-offs, stated plainly"
+        ]
+      },
+      {
+        "title": "Part 5 — Project Portfolio Plan",
+        "children": []
+      },
+      {
+        "title": "Part 6 — GitHub & Resume",
+        "children": []
+      },
+      {
+        "title": "Part 7 — Interview Preparation",
+        "children": []
+      },
+      {
+        "title": "Part 9 — If Time Gets Tight: Priority Order",
+        "children": []
+      },
+      {
+        "title": "Appendix — Full Milestone Checklist",
+        "children": []
+      }
+    ],
+    "months": [
+      {
+        "id": "month-1",
+        "number": 1,
+        "title": "Foundation Repair + Python Onboarding",
+        "focus": "Close the cheapest, highest-signal full-stack gaps. Get Python fluent enough to build with. Start the DSA habit.",
+        "weeks": [
+          {
+            "id": "week-1",
+            "number": 1,
+            "tasks": [
+              {
+                "column": "DSA",
+                "text": "Arrays & Hashing (~12 problems)",
+                "problems": 12
+              },
+              {
+                "column": "Full-Stack",
+                "text": "Jest fundamentals — unit test a few existing components"
+              },
+              {
+                "column": "AI/Python",
+                "text": "Python syntax, data types, control flow (fast — you already think like a programmer)"
+              }
+            ]
+          },
+          {
+            "id": "week-2",
+            "number": 2,
+            "tasks": [
+              {
+                "column": "DSA",
+                "text": "Arrays & Hashing cont. + Two Pointers start (~13 problems)",
+                "problems": 13
+              },
+              {
+                "column": "Full-Stack",
+                "text": "React Testing Library — test user interactions, not implementation details"
+              },
+              {
+                "column": "AI/Python",
+                "text": "Python: functions, OOP basics, virtual environments, pip"
+              }
+            ]
+          },
+          {
+            "id": "week-3",
+            "number": 3,
+            "tasks": [
+              {
+                "column": "DSA",
+                "text": "Two Pointers cont. (~10 problems)",
+                "problems": 10
+              },
+              {
+                "column": "Full-Stack",
+                "text": "PostgreSQL setup + schema design, primary/foreign keys"
+              },
+              {
+                "column": "AI/Python",
+                "text": "Python: file I/O, JSON handling, requests library, working with APIs"
+              }
+            ]
+          },
+          {
+            "id": "week-4",
+            "number": 4,
+            "tasks": [
+              {
+                "column": "DSA",
+                "text": "Review + fill gaps (~5 problems, revisit misses)",
+                "problems": 5
+              },
+              {
+                "column": "Full-Stack",
+                "text": "SQL: joins, indexes, normalization basics; write queries against your own schema"
+              },
+              {
+                "column": "AI/Python",
+                "text": "Small Python CLI project (below)"
+              }
+            ]
+          }
+        ],
+        "projectText": "Retrofit test coverage onto one existing component/small app (Jest + RTL). Separately, build a small Python CLI tool (e.g., a script that hits a public API and formats the output) — trivial in scope, but it's the thing that makes Python stop feeling foreign.",
+        "milestones": [
+          {
+            "id": "month-1-milestone-0",
+            "text": "35–40 DSA problems solved, comfortable with arrays/hashing/two-pointers patterns",
+            "checked": false
+          },
+          {
+            "id": "month-1-milestone-1",
+            "text": "Can write and run Jest + RTL tests without looking up basic syntax",
+            "checked": false
+          },
+          {
+            "id": "month-1-milestone-2",
+            "text": "Local Postgres instance running with a real schema (not just a tutorial one)",
+            "checked": false
+          },
+          {
+            "id": "month-1-milestone-3",
+            "text": "Comfortable writing a 50–100 line Python script from scratch",
+            "checked": false
+          }
+        ],
+        "raw": "### MONTH 1 — Foundation Repair + Python Onboarding\n\n**Focus:** Close the cheapest, highest-signal full-stack gaps. Get Python fluent enough to build with. Start the DSA habit.\n\n| Week | DSA | Full-Stack | AI/Python |\n|---|---|---|---|\n| 1 | Arrays & Hashing (~12 problems) | Jest fundamentals — unit test a few existing components | Python syntax, data types, control flow (fast — you already think like a programmer) |\n| 2 | Arrays & Hashing cont. + Two Pointers start (~13 problems) | React Testing Library — test user interactions, not implementation details | Python: functions, OOP basics, virtual environments, pip |\n| 3 | Two Pointers cont. (~10 problems) | PostgreSQL setup + schema design, primary/foreign keys | Python: file I/O, JSON handling, `requests` library, working with APIs |\n| 4 | Review + fill gaps (~5 problems, revisit misses) | SQL: joins, indexes, normalization basics; write queries against your own schema | Small Python CLI project (below) |\n\n**Project:** Retrofit test coverage onto one existing component/small app (Jest + RTL). Separately, build a small Python CLI tool (e.g., a script that hits a public API and formats the output) — trivial in scope, but it's the thing that makes Python stop feeling foreign.\n\n**Month 1 Milestone:**\n- [ ] 35–40 DSA problems solved, comfortable with arrays/hashing/two-pointers patterns\n- [ ] Can write and run Jest + RTL tests without looking up basic syntax\n- [ ] Local Postgres instance running with a real schema (not just a tutorial one)\n- [ ] Comfortable writing a 50–100 line Python script from scratch\n\n---\n\n"
+      },
+      {
+        "id": "month-2",
+        "number": 2,
+        "title": "Backend Depth + Data Tooling",
+        "focus": "Containerize and deploy something for real. Get hands dirty with data in Python. First ML workflow end-to-end.",
+        "weeks": [
+          {
+            "id": "week-5",
+            "number": 5,
+            "tasks": [
+              {
+                "column": "DSA",
+                "text": "Sliding Window (~8 problems)",
+                "problems": 8
+              },
+              {
+                "column": "Full-Stack",
+                "text": "Docker fundamentals — containerize an existing Node/Next app"
+              },
+              {
+                "column": "AI/Python",
+                "text": "NumPy + Pandas basics"
+              }
+            ]
+          },
+          {
+            "id": "week-6",
+            "number": 6,
+            "tasks": [
+              {
+                "column": "DSA",
+                "text": "Stack (~10 problems)",
+                "problems": 10
+              },
+              {
+                "column": "Full-Stack",
+                "text": "Docker Compose (multi-container: app + Postgres)"
+              },
+              {
+                "column": "AI/Python",
+                "text": "Pandas: cleaning and exploring a real dataset"
+              }
+            ]
+          },
+          {
+            "id": "week-7",
+            "number": 7,
+            "tasks": [
+              {
+                "column": "DSA",
+                "text": "Binary Search (~10 problems)",
+                "problems": 10
+              },
+              {
+                "column": "Full-Stack",
+                "text": "Deploy the containerized app (AWS free tier — EC2 or Elastic Beanstalk; or Render/Railway if you want a gentler on-ramp first)"
+              },
+              {
+                "column": "AI/Python",
+                "text": "scikit-learn: train/test split, a basic classifier, evaluation metrics"
+              }
+            ]
+          },
+          {
+            "id": "week-8",
+            "number": 8,
+            "tasks": [
+              {
+                "column": "DSA",
+                "text": "Linked List (~12 problems)",
+                "problems": 12
+              },
+              {
+                "column": "Full-Stack",
+                "text": "Redis basics — add a caching layer to something you've built"
+              },
+              {
+                "column": "AI/Python",
+                "text": "\"ChatGPT Prompt Engineering for Developers\" (DeepLearning.AI, free, ~1.5h) + start the LangChain short course"
+              }
+            ]
+          }
+        ],
+        "projectText": "Ship the Docker + cloud deployment as a real, live URL. Separately: one classical ML mini-project on a Kaggle dataset (classification or regression) — the point isn't the model quality, it's proving you understand the workflow (data → split → train → evaluate → iterate).",
+        "milestones": [
+          {
+            "id": "month-2-milestone-0",
+            "text": "~40 more DSA problems (cumulative ~75–80)",
+            "checked": false
+          },
+          {
+            "id": "month-2-milestone-1",
+            "text": "One project running in Docker, deployed, and reachable via a public URL",
+            "checked": false
+          },
+          {
+            "id": "month-2-milestone-2",
+            "text": "A completed, documented ML mini-project (even a simple one) showing the full workflow",
+            "checked": false
+          },
+          {
+            "id": "month-2-milestone-3",
+            "text": "Comfortable with Pandas for data cleaning/exploration",
+            "checked": false
+          }
+        ],
+        "raw": "### MONTH 2 — Backend Depth + Data Tooling\n\n**Focus:** Containerize and deploy something for real. Get hands dirty with data in Python. First ML workflow end-to-end.\n\n| Week | DSA | Full-Stack | AI/Python |\n|---|---|---|---|\n| 5 | Sliding Window (~8 problems) | Docker fundamentals — containerize an existing Node/Next app | NumPy + Pandas basics |\n| 6 | Stack (~10 problems) | Docker Compose (multi-container: app + Postgres) | Pandas: cleaning and exploring a real dataset |\n| 7 | Binary Search (~10 problems) | Deploy the containerized app (AWS free tier — EC2 or Elastic Beanstalk; or Render/Railway if you want a gentler on-ramp first) | scikit-learn: train/test split, a basic classifier, evaluation metrics |\n| 8 | Linked List (~12 problems) | Redis basics — add a caching layer to something you've built | \"ChatGPT Prompt Engineering for Developers\" (DeepLearning.AI, free, ~1.5h) + start the LangChain short course |\n\n**Project:** Ship the Docker + cloud deployment as a real, live URL. Separately: one classical ML mini-project on a Kaggle dataset (classification or regression) — the point isn't the model quality, it's proving you understand the *workflow* (data → split → train → evaluate → iterate).\n\n**Month 2 Milestone:**\n- [ ] ~40 more DSA problems (cumulative ~75–80)\n- [ ] One project running in Docker, deployed, and reachable via a public URL\n- [ ] A completed, documented ML mini-project (even a simple one) showing the full workflow\n- [ ] Comfortable with Pandas for data cleaning/exploration\n\n---\n\n"
+      },
+      {
+        "id": "month-3",
+        "number": 3,
+        "title": "System Design Basics + Real RAG (Flagship Project #1)",
+        "focus": "This is the month your AI story gets genuinely strong. You already know exactly what Physynex's retrieval system needs to do — you specified it — but it was AI-assisted, not hand-built. Now you build the same thing yourself, with real infrastructure this time.",
+        "weeks": [
+          {
+            "id": "week-9",
+            "number": 9,
+            "tasks": [
+              {
+                "column": "DSA",
+                "text": "Trees (~10 problems)",
+                "problems": 10
+              },
+              {
+                "column": "Full-Stack",
+                "text": "System design: scalability, caching, load balancing, CAP theorem (concepts only)"
+              },
+              {
+                "column": "AI",
+                "text": "Embeddings deep-dive: how they're generated, what \"similarity\" means, chunking strategies"
+              }
+            ]
+          },
+          {
+            "id": "week-10",
+            "number": 10,
+            "tasks": [
+              {
+                "column": "DSA",
+                "text": "Trees cont. (~8 problems)",
+                "problems": 8
+              },
+              {
+                "column": "Full-Stack",
+                "text": "Practice designing: URL shortener, rate limiter (write it out, don't just read about it)"
+              },
+              {
+                "column": "AI",
+                "text": "Vector databases: start with Chroma (fastest path to a working prototype)"
+              }
+            ]
+          },
+          {
+            "id": "week-11",
+            "number": 11,
+            "tasks": [
+              {
+                "column": "DSA",
+                "text": "Tries + Heap (~10 problems)",
+                "problems": 10
+              },
+              {
+                "column": "Full-Stack",
+                "text": "Practice designing: a basic chat app backend"
+              },
+              {
+                "column": "AI",
+                "text": "LangChain fundamentals — retrieval chains, document loaders"
+              }
+            ]
+          },
+          {
+            "id": "week-12",
+            "number": 12,
+            "tasks": [
+              {
+                "column": "DSA",
+                "text": "Heap cont. + review (~5 problems)",
+                "problems": 5
+              },
+              {
+                "column": "AI",
+                "text": "Build: rebuild Physynex's retrieval pipeline yourself, from scratch, with a real vector database — same requirements, your own code this time"
+              }
+            ]
+          }
+        ],
+        "projectText": "This is a genuine from-scratch build, not a refactor. You already know the spec cold (you directed it) — now you implement every piece yourself for the first time: chunking, embedding calls, similarity search, guardrail logic, red-flag detection. Don't build it inside Physynex's private codebase. Build it as a separate, standalone, public repo — a small reusable RAG engine (chunking + embedding + Chroma/pgvector retrieval) — then wire it into Physynex once it works. Two wins at once: the hands-on RAG skill you're actually missing, and a genuinely public, well-documented repo with real production usage behind it, which solves a gap you have on GitHub right now (more in Part 6).",
+        "milestones": [
+          {
+            "id": "month-3-milestone-0",
+            "text": "~35 more DSA problems (cumulative ~110–115)",
+            "checked": false
+          },
+          {
+            "id": "month-3-milestone-1",
+            "text": "Can whiteboard 3 classic system designs out loud, unscripted",
+            "checked": false
+          },
+          {
+            "id": "month-3-milestone-2",
+            "text": "A working, public RAG repo you wrote yourself, with a real vector database, integrated into a live product",
+            "checked": false
+          },
+          {
+            "id": "month-3-milestone-3",
+            "text": "Can defend every implementation choice — chunking strategy, embedding trade-offs, guardrail logic — because you wrote it this time, not just explain what it's supposed to do",
+            "checked": false
+          }
+        ],
+        "raw": "### MONTH 3 — System Design Basics + Real RAG (Flagship Project #1)\n\n**Focus:** This is the month your AI story gets genuinely strong. You already know exactly what Physynex's retrieval system needs to do — you specified it — but it was AI-assisted, not hand-built. Now you build the same thing yourself, with real infrastructure this time.\n\n| Week | DSA | Full-Stack | AI |\n|---|---|---|---|\n| 9 | Trees (~10 problems) | System design: scalability, caching, load balancing, CAP theorem (concepts only) | Embeddings deep-dive: how they're generated, what \"similarity\" means, chunking strategies |\n| 10 | Trees cont. (~8 problems) | Practice designing: URL shortener, rate limiter (write it out, don't just read about it) | Vector databases: start with Chroma (fastest path to a working prototype) |\n| 11 | Tries + Heap (~10 problems) | Practice designing: a basic chat app backend | LangChain fundamentals — retrieval chains, document loaders |\n| 12 | Heap cont. + review (~5 problems) | — | Build: rebuild Physynex's retrieval pipeline yourself, from scratch, with a real vector database — same requirements, your own code this time |\n\n**Project — Flagship #1:** This is a genuine from-scratch build, not a refactor. You already know the spec cold (you directed it) — now you implement every piece yourself for the first time: chunking, embedding calls, similarity search, guardrail logic, red-flag detection. Don't build it *inside* Physynex's private codebase. Build it as a **separate, standalone, public repo** — a small reusable RAG engine (chunking + embedding + Chroma/pgvector retrieval) — then wire it into Physynex once it works. Two wins at once: the hands-on RAG skill you're actually missing, and a genuinely public, well-documented repo with real production usage behind it, which solves a gap you have on GitHub right now (more in Part 6).\n\n**Month 3 Milestone:**\n- [ ] ~35 more DSA problems (cumulative ~110–115)\n- [ ] Can whiteboard 3 classic system designs out loud, unscripted\n- [ ] A working, public RAG repo *you wrote yourself*, with a real vector database, integrated into a live product\n- [ ] Can defend every implementation choice — chunking strategy, embedding trade-offs, guardrail logic — because you wrote it this time, not just explain what it's supposed to do\n\n---\n\n"
+      },
+      {
+        "id": "month-4",
+        "number": 4,
+        "title": "AI Agents + Advanced Full-Stack (Flagship Project #2)",
+        "focus": "Move from \"retrieves information\" to \"takes action.\" This is the differentiator that shows up explicitly in senior AI job postings (tool use, agentic libraries, MCP) — you're building the junior version of that now.",
+        "weeks": [
+          {
+            "id": "week-13",
+            "number": 13,
+            "tasks": [
+              {
+                "column": "DSA",
+                "text": "Graphs — BFS/DFS (~8 problems)",
+                "problems": 8
+              },
+              {
+                "column": "Full-Stack",
+                "text": "WebSockets basics (real-time feature on an existing project)"
+              },
+              {
+                "column": "AI",
+                "text": "Function/tool calling with LLM APIs — the core primitive under every agent framework"
+              }
+            ]
+          },
+          {
+            "id": "week-14",
+            "number": 14,
+            "tasks": [
+              {
+                "column": "DSA",
+                "text": "Graphs cont. (~8 problems)",
+                "problems": 8
+              },
+              {
+                "column": "Full-Stack",
+                "text": "Basic observability — structured logging + error tracking (Sentry or similar) on a deployed project"
+              },
+              {
+                "column": "AI",
+                "text": "LangGraph basics — state, cycles, multi-step reasoning"
+              }
+            ]
+          },
+          {
+            "id": "week-15",
+            "number": 15,
+            "tasks": [
+              {
+                "column": "DSA",
+                "text": "Advanced Graphs (~8 problems)",
+                "problems": 8
+              },
+              {
+                "column": "AI",
+                "text": "Model Context Protocol (MCP) — read the spec, understand why it exists, build one trivial MCP tool"
+              }
+            ]
+          },
+          {
+            "id": "week-16",
+            "number": 16,
+            "tasks": [
+              {
+                "column": "DSA",
+                "text": "Greedy (~8 problems)",
+                "problems": 8
+              },
+              {
+                "column": "AI",
+                "text": "Build: an agentic feature with real tool-calling"
+              }
+            ]
+          }
+        ],
+        "projectText": "Give your AI assistant the ability to act, not just answer. Two options — pick based on comfort experimenting on a live product:",
+        "milestones": [
+          {
+            "id": "month-4-milestone-0",
+            "text": "~32 more DSA problems (cumulative ~142–147)",
+            "checked": false
+          },
+          {
+            "id": "month-4-milestone-1",
+            "text": "A working feature where the LLM calls a real function/tool and acts on the result (not just generates text)",
+            "checked": false
+          },
+          {
+            "id": "month-4-milestone-2",
+            "text": "Can explain the difference between a RAG pipeline and an agent in interview-level terms",
+            "checked": false
+          },
+          {
+            "id": "month-4-milestone-3",
+            "text": "Basic logging/error tracking live on at least one deployed project",
+            "checked": false
+          }
+        ],
+        "raw": "### MONTH 4 — AI Agents + Advanced Full-Stack (Flagship Project #2)\n\n**Focus:** Move from \"retrieves information\" to \"takes action.\" This is the differentiator that shows up explicitly in senior AI job postings (tool use, agentic libraries, MCP) — you're building the junior version of that now.\n\n| Week | DSA | Full-Stack | AI |\n|---|---|---|---|\n| 13 | Graphs — BFS/DFS (~8 problems) | WebSockets basics (real-time feature on an existing project) | Function/tool calling with LLM APIs — the core primitive under every agent framework |\n| 14 | Graphs cont. (~8 problems) | Basic observability — structured logging + error tracking (Sentry or similar) on a deployed project | LangGraph basics — state, cycles, multi-step reasoning |\n| 15 | Advanced Graphs (~8 problems) | — | Model Context Protocol (MCP) — read the spec, understand why it exists, build one trivial MCP tool |\n| 16 | Greedy (~8 problems) | — | Build: an agentic feature with real tool-calling |\n\n**Project — Flagship #2:** Give your AI assistant the ability to *act*, not just answer. Two options — pick based on comfort experimenting on a live product:\n- **Extend Physynex:** connect the assistant to your real booking system (check availability, book a slot) via tool calling — powerful because it's a real production feature with real constraints.\n- **Standalone agent project:** if you'd rather not touch Physynex's production path yet, build a fresh agentic project in the same domain (a booking/scheduling agent, or a research/support agent) as its own public repo. Lower risk, same learning, still portfolio-worthy.\n\nEither way: this is where MCP awareness pays off directly, since it's explicitly listed as a requirement in current senior full-stack-AI postings.\n\n**Month 4 Milestone:**\n- [ ] ~32 more DSA problems (cumulative ~142–147)\n- [ ] A working feature where the LLM calls a real function/tool and acts on the result (not just generates text)\n- [ ] Can explain the difference between a RAG pipeline and an agent in interview-level terms\n- [ ] Basic logging/error tracking live on at least one deployed project\n\n---\n\n"
+      },
+      {
+        "id": "month-5",
+        "number": 5,
+        "title": "Integration, Capstone, and Interview Prep Begins",
+        "focus": "Hardest DSA stretch (Dynamic Programming). Build the flagship portfolio piece. Start mock interviews and applications — don't wait until month 6 to begin either.",
+        "weeks": [
+          {
+            "id": "week-17",
+            "number": 17,
+            "tasks": [
+              {
+                "column": "DSA",
+                "text": "1-D DP intro (~8 problems)",
+                "problems": 8
+              },
+              {
+                "column": "Full-Stack",
+                "text": "Polish pass: add missing tests, tighten READMEs across all projects"
+              },
+              {
+                "column": "AI",
+                "text": "LLM evaluation basics — how to know if your RAG/agent is actually working well"
+              }
+            ]
+          },
+          {
+            "id": "week-18",
+            "number": 18,
+            "tasks": [
+              {
+                "column": "DSA",
+                "text": "1-D DP cont. (~7 problems)",
+                "problems": 7
+              },
+              {
+                "column": "Full-Stack",
+                "text": "Accessibility + performance audit on your best project"
+              },
+              {
+                "column": "AI",
+                "text": "Fine-tuning concepts — LoRA/PEFT, conceptual only (what it's for, when RAG beats it)"
+              }
+            ]
+          },
+          {
+            "id": "week-19",
+            "number": 19,
+            "tasks": [
+              {
+                "column": "DSA",
+                "text": "2-D DP (~7 problems)",
+                "problems": 7
+              },
+              {
+                "column": "Full-Stack",
+                "text": "Start Capstone build (see Part 5)"
+              },
+              {
+                "column": "AI",
+                "text": "Capstone build continues"
+              }
+            ]
+          },
+          {
+            "id": "week-20",
+            "number": 20,
+            "tasks": [
+              {
+                "column": "DSA",
+                "text": "2-D DP cont. + Bit Manipulation (~8 problems)",
+                "problems": 8
+              },
+              {
+                "column": "Full-Stack",
+                "text": "Capstone build continues"
+              },
+              {
+                "column": "AI",
+                "text": "Capstone build continues"
+              }
+            ]
+          }
+        ],
+        "projectText": "A new, fully public, fully original full-stack + AI project — auth, database, deployed, tested, with a RAG and/or agent feature. This is designed specifically to fix the gap Part 6 identifies: right now your public GitHub doesn't reflect your actual skill level, and your best work (Sangeetha Connect, Physynex core, Croire Paints) is proprietary or client work you can't open-source wholesale. This one is 100% yours to publish. Ideas in Part 5.",
+        "milestones": [
+          {
+            "id": "month-5-milestone-0",
+            "text": "~30 more DSA problems (cumulative ~172–177)",
+            "checked": false
+          },
+          {
+            "id": "month-5-milestone-1",
+            "text": "Capstone project live, public, and well-documented on GitHub",
+            "checked": false
+          },
+          {
+            "id": "month-5-milestone-2",
+            "text": "At least 2 mock interviews completed",
+            "checked": false
+          },
+          {
+            "id": "month-5-milestone-3",
+            "text": "Applications in flight",
+            "checked": false
+          }
+        ],
+        "raw": "### MONTH 5 — Integration, Capstone, and Interview Prep Begins\n\n**Focus:** Hardest DSA stretch (Dynamic Programming). Build the flagship portfolio piece. Start mock interviews and applications — don't wait until month 6 to begin either.\n\n| Week | DSA | Full-Stack | AI |\n|---|---|---|---|\n| 17 | 1-D DP intro (~8 problems) | Polish pass: add missing tests, tighten READMEs across all projects | LLM evaluation basics — how to know if your RAG/agent is actually working well |\n| 18 | 1-D DP cont. (~7 problems) | Accessibility + performance audit on your best project | Fine-tuning concepts — LoRA/PEFT, conceptual only (what it's for, when RAG beats it) |\n| 19 | 2-D DP (~7 problems) | **Start Capstone build** (see Part 5) | **Capstone build continues** |\n| 20 | 2-D DP cont. + Bit Manipulation (~8 problems) | **Capstone build continues** | **Capstone build continues** |\n\n**Project — Capstone:** A new, fully public, fully original full-stack + AI project — auth, database, deployed, tested, with a RAG and/or agent feature. This is designed specifically to fix the gap Part 6 identifies: right now your public GitHub doesn't reflect your actual skill level, and your best work (Sangeetha Connect, Physynex core, Croire Paints) is proprietary or client work you can't open-source wholesale. This one is 100% yours to publish. Ideas in Part 5.\n\n**Also starting this month:**\n- First mock interviews (technical + behavioral)\n- First job applications — don't wait for \"fully ready,\" start applying once Month 5 begins\n\n**Month 5 Milestone:**\n- [ ] ~30 more DSA problems (cumulative ~172–177)\n- [ ] Capstone project live, public, and well-documented on GitHub\n- [ ] At least 2 mock interviews completed\n- [ ] Applications in flight\n\n---\n\n"
+      },
+      {
+        "id": "month-6",
+        "number": 6,
+        "title": "Interview Sprint",
+        "focus": "Everything now points at getting hired. Review, drill weak spots, interview heavily.",
+        "weeks": [
+          {
+            "id": "week-21",
+            "number": 21,
+            "tasks": [
+              {
+                "column": "DSA",
+                "text": "Remaining topics (Bit Manipulation, Math) + timed practice (~10 problems)",
+                "problems": 10
+              },
+              {
+                "column": "System Design",
+                "text": "2 more mock designs (chat app, feed system)"
+              },
+              {
+                "column": "Behavioral",
+                "text": "Finalize STAR stories from real bullets"
+              },
+              {
+                "column": "Applications",
+                "text": "Ramp up volume"
+              }
+            ]
+          },
+          {
+            "id": "week-22",
+            "number": 22,
+            "tasks": [
+              {
+                "column": "DSA",
+                "text": "Timed mixed practice, company-tagged sets (~10 problems)",
+                "problems": 10
+              },
+              {
+                "column": "System Design",
+                "text": "Mock design with a peer or on Pramp"
+              },
+              {
+                "column": "Behavioral",
+                "text": "Record yourself answering common questions"
+              },
+              {
+                "column": "Applications",
+                "text": "Continue"
+              }
+            ]
+          },
+          {
+            "id": "week-23",
+            "number": 23,
+            "tasks": [
+              {
+                "column": "DSA",
+                "text": "Weak-topic remediation (~8 problems)",
+                "problems": 8
+              },
+              {
+                "column": "System Design",
+                "text": "Final review of core building blocks"
+              },
+              {
+                "column": "Behavioral",
+                "text": "Mock interview #3–4"
+              },
+              {
+                "column": "Applications",
+                "text": "Continue"
+              }
+            ]
+          },
+          {
+            "id": "week-24",
+            "number": 24,
+            "tasks": [
+              {
+                "column": "DSA",
+                "text": "Light review only — protect energy for real interviews"
+              },
+              {
+                "column": "Applications",
+                "text": "Active interviewing"
+              }
+            ]
+          }
+        ],
+        "milestones": [
+          {
+            "id": "month-6-milestone-0",
+            "text": "~190–200 total DSA problems solved across the 6 months",
+            "checked": false
+          },
+          {
+            "id": "month-6-milestone-1",
+            "text": "4+ mock interviews completed (technical + behavioral + system design)",
+            "checked": false
+          },
+          {
+            "id": "month-6-milestone-2",
+            "text": "Resume, LinkedIn, GitHub all reflect the new skill set",
+            "checked": false
+          },
+          {
+            "id": "month-6-milestone-3",
+            "text": "Actively interviewing across both Full Stack and AI-hybrid roles",
+            "checked": false
+          }
+        ],
+        "raw": "### MONTH 6 — Interview Sprint\n\n**Focus:** Everything now points at getting hired. Review, drill weak spots, interview heavily.\n\n| Week | DSA | System Design | Behavioral | Applications |\n|---|---|---|---|---|\n| 21 | Remaining topics (Bit Manipulation, Math) + timed practice (~10 problems) | 2 more mock designs (chat app, feed system) | Finalize STAR stories from real bullets | Ramp up volume |\n| 22 | Timed mixed practice, company-tagged sets (~10 problems) | Mock design with a peer or on Pramp | Record yourself answering common questions | Continue |\n| 23 | Weak-topic remediation (~8 problems) | Final review of core building blocks | Mock interview #3–4 | Continue |\n| 24 | Light review only — protect energy for real interviews | — | — | Active interviewing |\n\n**Month 6 Milestone:**\n- [ ] ~190–200 total DSA problems solved across the 6 months\n- [ ] 4+ mock interviews completed (technical + behavioral + system design)\n- [ ] Resume, LinkedIn, GitHub all reflect the new skill set\n- [ ] Actively interviewing across both Full Stack and AI-hybrid roles\n\n---\n\n"
+      }
+    ],
+    "dsaTable": [
+      {
+        "weeks": "1–2",
+        "topic": "Arrays & Hashing, Two Pointers",
+        "problems": "~25",
+        "cumulative": "25"
+      },
+      {
+        "weeks": "3–4",
+        "topic": "Sliding Window, Stack",
+        "problems": "~18",
+        "cumulative": "43"
+      },
+      {
+        "weeks": "5–6",
+        "topic": "Binary Search, Linked List",
+        "problems": "~20",
+        "cumulative": "63"
+      },
+      {
+        "weeks": "7–8",
+        "topic": "Trees",
+        "problems": "~18",
+        "cumulative": "81"
+      },
+      {
+        "weeks": "9–10",
+        "topic": "Tries, Heap / Priority Queue",
+        "problems": "~15",
+        "cumulative": "96"
+      },
+      {
+        "weeks": "11–12",
+        "topic": "Backtracking, Intervals",
+        "problems": "~18",
+        "cumulative": "114"
+      },
+      {
+        "weeks": "13–14",
+        "topic": "Graphs",
+        "problems": "~15",
+        "cumulative": "129"
+      },
+      {
+        "weeks": "15–16",
+        "topic": "Advanced Graphs, Greedy",
+        "problems": "~15",
+        "cumulative": "144"
+      },
+      {
+        "weeks": "17–18",
+        "topic": "1-D Dynamic Programming",
+        "problems": "~15",
+        "cumulative": "159"
+      },
+      {
+        "weeks": "19–20",
+        "topic": "2-D DP, Bit Manipulation, Math",
+        "problems": "~12",
+        "cumulative": "171"
+      },
+      {
+        "weeks": "21–22",
+        "topic": "Timed mixed review + company-tagged sets",
+        "problems": "~15",
+        "cumulative": "186"
+      },
+      {
+        "weeks": "23–24",
+        "topic": "Weak-spot remediation + final review",
+        "problems": "~10–15",
+        "cumulative": "~196–201"
+      }
+    ],
+    "projects": [
+      {
+        "id": "project-1",
+        "title": "Tested & Typed",
+        "month": "1",
+        "description": "Existing project retrofitted with real Jest + RTL coverage, plus a small Python CLI tool. Not flagship-tier, but proves testing discipline.",
+        "isFlagship": true,
+        "checklist": [
+          {
+            "id": "project-1-check-0",
+            "text": "a live deployed URL",
+            "checked": false
+          },
+          {
+            "id": "project-1-check-1",
+            "text": "a README with an architecture diagram/screenshot",
+            "checked": false
+          },
+          {
+            "id": "project-1-check-2",
+            "text": "test coverage on the core logic",
+            "checked": false
+          }
+        ]
+      },
+      {
+        "id": "project-2",
+        "title": "Containerized & Deployed",
+        "month": "2",
+        "description": "A full-stack app running in Docker, deployed to AWS (or Render/Railway), with a companion classical-ML mini-project (Kaggle dataset, scikit-learn) showing the full ML workflow.",
+        "isFlagship": false,
+        "checklist": [
+          {
+            "id": "project-2-check-0",
+            "text": "a live deployed URL",
+            "checked": false
+          },
+          {
+            "id": "project-2-check-1",
+            "text": "a README with an architecture diagram/screenshot",
+            "checked": false
+          },
+          {
+            "id": "project-2-check-2",
+            "text": "test coverage on the core logic",
+            "checked": false
+          }
+        ]
+      },
+      {
+        "id": "project-3",
+        "title": "RAG Engine (Flagship #1)",
+        "month": "3",
+        "description": "Standalone, public, reusable RAG module (chunking + embeddings + Chroma or pgvector) — built from scratch, by hand, using Physynex's existing behavior as the spec. This is where \"understands the concept\" becomes \"can implement it,\" which is the actual gap right now — then it gets integrated into Physynex.",
+        "isFlagship": true,
+        "checklist": [
+          {
+            "id": "project-3-check-0",
+            "text": "a live deployed URL",
+            "checked": false
+          },
+          {
+            "id": "project-3-check-1",
+            "text": "a README with an architecture diagram/screenshot",
+            "checked": false
+          },
+          {
+            "id": "project-3-check-2",
+            "text": "test coverage on the core logic",
+            "checked": false
+          }
+        ]
+      },
+      {
+        "id": "project-4",
+        "title": "Agentic Feature (Flagship #2)",
+        "month": "4",
+        "description": "Real tool-calling — either a booking agent wired into Physynex, or a standalone agent project in the same domain.",
+        "isFlagship": true,
+        "checklist": [
+          {
+            "id": "project-4-check-0",
+            "text": "a live deployed URL",
+            "checked": false
+          },
+          {
+            "id": "project-4-check-1",
+            "text": "a README with an architecture diagram/screenshot",
+            "checked": false
+          },
+          {
+            "id": "project-4-check-2",
+            "text": "test coverage on the core logic",
+            "checked": false
+          }
+        ]
+      },
+      {
+        "id": "project-5",
+        "title": "Capstone (Flagship #3)",
+        "month": "5",
+        "description": "A brand-new, fully public, fully original full-stack + AI project. Suggested directions (pick whichever you'd actually enjoy using): A DSA/interview-prep tracker with an AI coach — genuinely useful to you personally (dogfooding this exact roadmap), auth + DB + a RAG-backed Q&A feature over your own notes + an agent that quizzes you. · A document/knowledge-base assistant for a domain you know (e.g., physiotherapy content, given your Physynex context) — upload docs, RAG-based Q&A, source citations. · A smart support/FAQ agent-as-a-service — multi-tenant, auth, a dashboard, an agent that can look up order/booking status via tool calls against a seeded database.",
+        "isFlagship": true,
+        "checklist": [
+          {
+            "id": "project-5-check-0",
+            "text": "a live deployed URL",
+            "checked": false
+          },
+          {
+            "id": "project-5-check-1",
+            "text": "a README with an architecture diagram/screenshot",
+            "checked": false
+          },
+          {
+            "id": "project-5-check-2",
+            "text": "test coverage on the core logic",
+            "checked": false
+          }
+        ]
+      }
+    ],
+    "resources": [
+      {
+        "id": "resource-1",
+        "title": "Primary path",
+        "description": "takeuforward.org/strivers-a2z-dsa-course — the site, not the YouTube channel browsed on its own. Striver (Raj Vikramaditya, ex-Google/Amazon/Media.net) has said directly not to just watch his channel top-to-bottom — the site organizes ~455 problems across ~19 topics with the right video embedded at the right point, theory and problems together, in the order you should learn them. This is exactly the \"one thing that teaches concept by concept\" you asked for, and it already matches the topic order in Part 4 — follow it in sequence.",
+        "url": "https://takeuforward.org",
+        "category": "DSA",
+        "tier": "unknown"
+      },
+      {
+        "id": "resource-2",
+        "title": "Secondary / alternate explanations",
+        "description": "NeetCode 150 (neetcode.io/practice) — same core patterns, grouped by category, one short video per problem. Use this specifically when Striver's explanation of a topic isn't landing — a second teacher's framing often unsticks it.",
+        "url": "https://neetcode.io",
+        "category": "DSA",
+        "tier": "unknown"
+      },
+      {
+        "id": "resource-3",
+        "title": "Platform to solve on",
+        "description": "LeetCode (free tier is enough).",
+        "category": "DSA",
+        "tier": "unknown"
+      },
+      {
+        "id": "resource-4",
+        "title": "Testing — Jest + RTL",
+        "description": "Search \"Programming with Mosh React Testing Library\" or \"Lama Dev React Testing\" — Free YouTube video, then testing-library.com/docs as your reference afterward",
+        "category": "Full-Stack",
+        "format": "Free YouTube video, then testing-library.com/docs as your reference afterward",
+        "tier": "unknown"
+      },
+      {
+        "id": "resource-5",
+        "title": "SQL / relational DB basics",
+        "description": "freeCodeCamp — \"SQL Tutorial: Full Database Course for Beginners\" (Mike Dane) — Free YouTube, project-based — you build a Mario database, a bike-rental DB, etc.",
+        "category": "Full-Stack",
+        "format": "Free YouTube, project-based — you build a Mario database, a bike-rental DB, etc.",
+        "tier": "unknown"
+      },
+      {
+        "id": "resource-6",
+        "title": "PostgreSQL specifics",
+        "description": "postgresql.org/docs/current/tutorial.html — Official docs — go here after the SQL course, for Postgres-specific syntax",
+        "url": "https://postgresql.org",
+        "category": "Full-Stack",
+        "format": "Official docs — go here after the SQL course, for Postgres-specific syntax",
+        "tier": "unknown"
+      },
+      {
+        "id": "resource-7",
+        "title": "Docker",
+        "description": "freeCodeCamp — \"Docker Full Course\" — Free YouTube, comprehensive",
+        "category": "Full-Stack",
+        "format": "Free YouTube, comprehensive",
+        "tier": "unknown"
+      },
+      {
+        "id": "resource-8",
+        "title": "AWS fundamentals",
+        "description": "freeCodeCamp — \"AWS Certified Cloud Practitioner\" course (Andrew Brown, ~14h) — Free YouTube",
+        "category": "Full-Stack",
+        "format": "Free YouTube",
+        "tier": "unknown"
+      },
+      {
+        "id": "resource-9",
+        "title": "AWS hands-on (Month 2's deploy step)",
+        "description": "freeCodeCamp — \"AWS Cloud Project Bootcamp\" — Free — walks through containerizing and deploying a real project on AWS, matches what Month 2 asks you to do",
+        "category": "Full-Stack",
+        "format": "Free — walks through containerizing and deploying a real project on AWS, matches what Month 2 asks you to do",
+        "tier": "unknown"
+      },
+      {
+        "id": "resource-10",
+        "title": "System design fundamentals",
+        "description": "Gaurav Sen (YouTube channel) — Free — explains scaling, caching, load balancing simply before going deep",
+        "category": "Full-Stack",
+        "format": "Free — explains scaling, caching, load balancing simply before going deep",
+        "tier": "unknown"
+      },
+      {
+        "id": "resource-11",
+        "title": "System design, visual reference",
+        "description": "ByteByteGo (YouTube + newsletter) — Free",
+        "category": "Full-Stack",
+        "format": "Free",
+        "tier": "unknown"
+      },
+      {
+        "id": "resource-12",
+        "title": "System design, practice problems",
+        "description": "Search \"system design primer\" on GitHub — Free, community-maintained roadmap + problem bank",
+        "category": "Full-Stack",
+        "format": "Free, community-maintained roadmap + problem bank",
+        "tier": "unknown"
+      },
+      {
+        "id": "resource-13",
+        "title": "System design, structured paid option",
+        "description": "Grokking the System Design Interview (Educative) — Paid — closest thing to a \"gold standard,\" optional, only if free resources aren't sticking",
+        "category": "Full-Stack",
+        "format": "Paid — closest thing to a \"gold standard,\" optional, only if free resources aren't sticking",
+        "tier": "unknown"
+      },
+      {
+        "id": "resource-14",
+        "title": "Python fundamentals (Month 1)",
+        "description": "freeCodeCamp — \"Learn Python – Full Course for Beginners\" (Mike Dane, ~4h) — Free YouTube — you already code professionally, so move fast through syntax and slow down only where OOP feels genuinely new",
+        "category": "AI / Python",
+        "format": "Free YouTube — you already code professionally, so move fast through syntax and slow down only where OOP feels genuinely new",
+        "tier": "unknown"
+      },
+      {
+        "id": "resource-15",
+        "title": "NumPy + Pandas (Month 2)",
+        "description": "freeCodeCamp — \"Learn Python for Data Science\" (Frank Andrade, ~17h) — Free YouTube — covers Pandas/NumPy specifically with real projects, exactly what Month 2 needs",
+        "category": "AI / Python",
+        "format": "Free YouTube — covers Pandas/NumPy specifically with real projects, exactly what Month 2 needs",
+        "tier": "unknown"
+      },
+      {
+        "id": "resource-16",
+        "title": "ML fundamentals, hands-on",
+        "description": "freeCodeCamp — \"Machine Learning with Python and Scikit-Learn\" (Aakash N S, ~18h) — Free YouTube — hands-on with linear/logistic regression, decision trees, random forests",
+        "category": "AI / Python",
+        "format": "Free YouTube — hands-on with linear/logistic regression, decision trees, random forests",
+        "tier": "unknown"
+      },
+      {
+        "id": "resource-17",
+        "title": "ML fundamentals, why it works",
+        "description": "StatQuest with Josh Starmer (YouTube channel) — Free — short 5–15 min videos on the intuition behind each algorithm; watch alongside the course above, not instead of it",
+        "category": "AI / Python",
+        "format": "Free — short 5–15 min videos on the intuition behind each algorithm; watch alongside the course above, not instead of it",
+        "tier": "unknown"
+      },
+      {
+        "id": "resource-18",
+        "title": "Prompt engineering",
+        "description": "DeepLearning.AI — \"ChatGPT Prompt Engineering for Developers\" — Free (email signup), ~1.5h, taught by Andrew Ng + an OpenAI researcher",
+        "category": "AI / Python",
+        "format": "Free (email signup), ~1.5h, taught by Andrew Ng + an OpenAI researcher",
+        "tier": "unknown"
+      },
+      {
+        "id": "resource-19",
+        "title": "RAG — from scratch first",
+        "description": "Search \"Learn RAG From Scratch\" (tutorial by a LangChain engineer) — Free YouTube — builds real understanding before a framework does the work for you; do this before the LangChain-based one below",
+        "category": "AI / Python",
+        "format": "Free YouTube — builds real understanding before a framework does the work for you; do this before the LangChain-based one below",
+        "tier": "unknown"
+      },
+      {
+        "id": "resource-20",
+        "title": "RAG — scratch to production",
+        "description": "Venelin Valkov — \"What is RAG? The Complete Tutorial: From Scratch to Deployed API on Production\" — Free YouTube — mirrors Month 3's arc almost exactly: hand-build a retriever → refactor with LangChain → wrap in FastAPI → containerize with Docker",
+        "category": "AI / Python",
+        "format": "Free YouTube — mirrors Month 3's arc almost exactly: hand-build a retriever → refactor with LangChain → wrap in FastAPI → containerize with Docker",
+        "tier": "unknown"
+      },
+      {
+        "id": "resource-21",
+        "title": "RAG, alternate walkthrough",
+        "description": "Krish Naik's RAG crash course (YouTube) — Free — Krish Naik is one of the most-followed AI/ML educators for Indian learners specifically; worth knowing his channel generally, you'll likely end up back there",
+        "category": "AI / Python",
+        "format": "Free — Krish Naik is one of the most-followed AI/ML educators for Indian learners specifically; worth knowing his channel generally, you'll likely end up back there",
+        "tier": "unknown"
+      },
+      {
+        "id": "resource-22",
+        "title": "LangChain fundamentals",
+        "description": "docs.langchain.com (official tutorials) — Free, authoritative, stays current as the framework changes fast",
+        "url": "https://langchain.com",
+        "category": "AI / Python",
+        "format": "Free, authoritative, stays current as the framework changes fast",
+        "tier": "unknown"
+      },
+      {
+        "id": "resource-23",
+        "title": "Agents + LangGraph + MCP (Month 4)",
+        "description": "Krish Naik — \"Agentic AI with LangGraph and MCP Crash Course\" (~2.5h) — Free YouTube — unusually well-matched to Month 4: LangGraph basics, a tool-calling chatbot, ReAct agent architecture, memory, and building an MCP server from scratch, all in one course",
+        "category": "AI / Python",
+        "format": "Free YouTube — unusually well-matched to Month 4: LangGraph basics, a tool-calling chatbot, ReAct agent architecture, memory, and building an MCP server from scratch, all in one course",
+        "tier": "unknown"
+      },
+      {
+        "id": "resource-24",
+        "title": "MCP, the spec itself",
+        "description": "modelcontextprotocol.io — Official docs, straight from the source",
+        "url": "https://modelcontextprotocol.io",
+        "category": "AI / Python",
+        "format": "Official docs, straight from the source",
+        "tier": "unknown"
+      },
+      {
+        "id": "resource-25",
+        "title": "Vector databases",
+        "description": "Chroma's docs (trychroma.com) for the easiest first prototype; pgvector's GitHub docs once you want the Postgres-backed version — Official docs — both are simple enough to learn directly, no video needed",
+        "url": "https://trychroma.com",
+        "category": "AI / Python",
+        "format": "Official docs — both are simple enough to learn directly, no video needed",
+        "tier": "unknown"
+      },
+      {
+        "id": "resource-26",
+        "title": "Mock technical interviews",
+        "description": "Pramp (peer-matched) — Free",
+        "category": "Mock Interviews & Tools",
+        "format": "Free",
+        "tier": "unknown"
+      },
+      {
+        "id": "resource-27",
+        "title": "Mock interviews, alternate",
+        "description": "Interviewing.io — Free tier",
+        "url": "https://interviewing.io",
+        "category": "Mock Interviews & Tools",
+        "format": "Free tier",
+        "tier": "unknown"
+      },
+      {
+        "id": "resource-28",
+        "title": "Diagramming for system design",
+        "description": "Excalidraw, draw.io — Free",
+        "url": "https://draw.io",
+        "category": "Mock Interviews & Tools",
+        "format": "Free",
+        "tier": "unknown"
+      }
+    ],
+    "priorityOrder": [
+      {
+        "tier": "Tier 1 — Never skip, even if reduced in volume",
+        "items": [
+          "DSA consistency (fewer problems/week is fine; stopping entirely is not)",
+          "Testing (Jest/RTL) — cheap to learn, commonly screened for",
+          "SQL fundamentals — near-universal expectation",
+          "One deployed, tested, cloud-hosted full-stack project",
+          "Python fundamentals + one working RAG project (your minimum viable AI story)"
+        ]
+      },
+      {
+        "tier": "Tier 2 — Compress before eliminating",
+        "items": [
+          "System design (keep the vocabulary and 3–4 practiced designs even if you cut practice volume)",
+          "Docker (can go conceptual-only if truly squeezed)",
+          "ML fundamentals coursework (shrink to \"can explain the workflow,\" skip the polished project)"
+        ]
+      },
+      {
+        "tier": "Tier 3 — First things to cut if the calendar demands it",
+        "items": [
+          "AI agents / MCP depth (a strong differentiator, not a baseline requirement)",
+          "GraphQL, WebSockets, Redis, observability tooling",
+          "Fine-tuning experiments (conceptual understanding is enough regardless)",
+          "Open-source contributions to other people's projects",
+          "Kubernetes, multi-cloud, advanced infrastructure"
+        ]
+      }
+    ],
+    "appendixChecklist": [
+      {
+        "id": "appendix-0",
+        "text": "Month 1: 35–40 DSA problems · Jest+RTL fluency · local Postgres schema · basic Python scripting",
+        "checked": false
+      },
+      {
+        "id": "appendix-1",
+        "text": "Month 2: ~75–80 cumulative DSA problems · one Dockerized + cloud-deployed project · one completed ML mini-project",
+        "checked": false
+      },
+      {
+        "id": "appendix-2",
+        "text": "Month 3: ~110–115 cumulative DSA problems · 3 whiteboard-ready system designs · public RAG repo you hand-built yourself, integrated into Physynex",
+        "checked": false
+      },
+      {
+        "id": "appendix-3",
+        "text": "Month 4: ~142–147 cumulative DSA problems · working agentic/tool-calling feature · basic observability live",
+        "checked": false
+      },
+      {
+        "id": "appendix-4",
+        "text": "Month 5: ~172–177 cumulative DSA problems · capstone project live and public · 2+ mock interviews · applications started",
+        "checked": false
+      },
+      {
+        "id": "appendix-5",
+        "text": "Month 6: ~190–200 total DSA problems · 4+ mock interviews completed · resume/LinkedIn/GitHub fully updated · actively interviewing",
+        "checked": false
+      }
+    ],
+    "sections": [
+      {
+        "id": "part-1-where-you-stand-today",
+        "title": "Part 1 — Where You Stand Today",
+        "level": 2,
+        "contentMarkdown": "## Part 1 — Where You Stand Today\n\n### 1.1 Strengths & Transferable Skills\n\nThese are real, and you should stop underselling them:\n\n- **Production React/Next.js/TypeScript depth.** 65+ shipped components, Redux/Context refactors with a measured 30%+ maintainability gain, multiple *live* products (not tutorial projects). This is your floor, not your ceiling — it's already competitive.\n- **Backend-adjacent range most \"frontend\" candidates don't have.** Node.js middleware design, the BFF pattern, secure API proxying (sanitization, token forwarding, header injection), Express. You already think about backend concerns — you just haven't formalized the database/testing/infra side yet.\n- **Genuine product-level understanding of applied AI — still rare, even without the hands-on code yet.** You specified and directed exactly what a serious AI feature needs: retrieval logic (keyword + embeddings hybrid), topic/guardrail controls, red-flag symptom detection, lead classification. Most engineers never get this far — they either avoid AI features entirely or bolt on a raw API call with no product thinking. To be precise about where you actually stand (per your own correction): the Physynex implementation was AI-assisted, so the hands-on technical depth — writing the retrieval code yourself, defending every choice under questioning — isn't there yet. That's exactly what Months 3–4 rebuild, using Physynex's own requirements as the spec. Pulled from live job postings while researching this: an Accenture \"AI/ML Engineer\" listing (7.5 yrs min) and a remote \"Senior Full Stack AI Engineer\" role (₹22–30 LPA) both ask for this shape of work. You already understand the shape of the job — the roadmap builds the hands to match.\n- **Full delivery-lifecycle exposure.** CI/CD (Jenkins), deployment, third-party integrations (HubSpot, Webflow, ZeroBounce).\n- **Entrepreneurial/product range that's unusual at 2–3 years in.** Physynex and Croire Paints (croirepaints.com — a live 3D product showcase using Three.js/React Three Fiber, currently not on your resume) are real, live, customer-facing products you built and shipped, not internal-only assignments. This is strong behavioral-interview material.\n- **You quantify everything.** 30%+, 25%, 20%, 15% — this is genuinely good resume practice and most candidates don't do it.\n\n### 1.2 Gap Analysis — Full Stack Developer Track\n\nChecked against your resume, your actual GitHub, and real \"Full Stack Developer\" postings on Indeed India (2–6 yrs band) as of July 2026:\n\n| Gap | Why it matters | Evidence |\n|---|---|---|\n| **SQL / relational databases** | Near-universal expectation alongside or instead of MongoDB. A live GLOINNT \"Full Stack Developer (MERN/MEAN)\" posting and a Carlton IT listing both explicitly wanted relational DB comfort, not just Mongo. | 0 mentions on resume |\n| **Automated testing** | \"Write clean, maintainable code and perform unit testing\" appears directly in a real job description you're a strong fit for otherwise. | 0 mentions on resume/GitHub |\n| **DSA / coding-interview fluency** | Still gates most Indian tech interviews regardless of role or seniority. | No LeetCode/competitive profile referenced |\n| **System design fundamentals** | Standard from mid-level up; increasingly asked even at 2–3 YOE for product companies. | Not mentioned |\n| **Docker** | Table-stakes for \"owns a feature end-to-end\" positioning. | Not mentioned |\n| **One cloud platform (recommend AWS)** | Two of three detailed job postings pulled during research explicitly required AWS or Azure service familiarity, not just Jenkins CI/CD. | Not mentioned |\n\n### 1.3 Gap Analysis — AI Engineering Track\n\n| Gap | Why it matters | Evidence |\n|---|---|---|\n| **Python** | The single biggest blocker. Every AI-adjacent posting pulled — Accenture's AI/ML Engineer role, the Gen AI Solutions Engineer role, the remote Full Stack AI Engineer role — lists Python as a must-have, often \"advanced.\" Your resume has zero Python. | 0 mentions |\n| **ML fundamentals (workflow-level)** | Not deep math — but you should be able to explain train/test splits, overfitting, evaluation metrics, and when classical ML beats an LLM call. | Not present |\n| **Hands-on RAG implementation** | You directed and understand the concept (retrieval, guardrails, red-flagging, lead classification) — genuinely good product instinct — but the code itself was AI-assisted. Writing and defending the implementation yourself is the real gap, not just adding a vector database on top of something you already built by hand. Treat Month 3 as building the thing for the first time, not upgrading it. | Physynex's pipeline exists and works, but wasn't hand-built by you |\n| **Agent frameworks + tool use** | Every mid-to-senior AI job posting checked (Accenture, CloudiQS) explicitly asks for agentic libraries — LangChain/LangGraph, AutoGen, or AWS's Strands/Bedrock AgentCore. | Not present |\n| **Model Context Protocol (MCP) awareness** | As of mid-2026, MCP has become the standard tool-interoperability layer across essentially every major agent framework (LangGraph, CrewAI, Claude Agent SDK, OpenAI Agents SDK, Strands) — and it's explicitly listed as a \"must-have\" in the CloudiQS senior posting. Worth knowing conceptually even before you're using it daily. | Not present |\n\n### 1.4 Skill Tiers\n\n**Essential (blocks you from being competitive without it):**\nSQL/Postgres · Testing (Jest + RTL) · DSA · System design basics · Docker · One cloud platform · Python · Applied ML fundamentals · Real RAG with a vector database · Basic agent/tool-use pattern\n\n**Recommended (strong differentiator, not a hard blocker):**\nGitHub Actions CI/CD · Redis · WebSockets · Basic observability (error tracking/logging) · FastAPI (Python backend — several AI-engineer postings specifically want this alongside or instead of Node) · LangChain/LangGraph fluency · MCP hands-on · LLM evaluation basics · Fine-tuning concepts (conceptual, not hands-on)\n\n**Optional (nice to have, don't chase these first):**\nGraphQL · Kubernetes · React Native · Multi-cloud · Computer vision · Deep learning math / training models from scratch · Open-source contributions to third-party projects\n\n### 1.5 Interview-Ready vs. Needs Significant Work\n\n**Interview-ready right now:**\n- React/JS/TS fundamentals, hooks, component architecture, state management patterns\n- Node.js/Express, REST API design, middleware/auth/session concepts\n- Explaining Physynex's AI assistant at the *product/architecture* level — what it does, why each piece exists (guardrails, red-flagging, lead classification) — you already have a 30-question prep document from an earlier session covering this and general React/JS/Node fundamentals; reuse and extend it, don't rebuild it\n- Agile process questions, ownership/initiative stories (Physynex, Croire Paints)\n\n**Needs significant work:**\n- DSA in *timed coding-interview format* specifically (you code well on the job — that's a different skill from solving an unseen problem in 30 minutes)\n- System design in whiteboard/verbal-reasoning format\n- SQL (currently ~zero)\n- Testing (currently ~zero)\n- **Defending Physynex's RAG implementation at the code level** — right now, \"walk me through how you built the retrieval logic\" is a genuine risk area, because you can explain the *what* and *why* but not yet every implementation choice. This closes specifically in Month 3, once you've rebuilt it yourself.\n- Python/ML/AI technical depth beyond the prompt-engineering level — you can't yet defend vector DB trade-offs, chunking strategy choices, or agent architecture decisions in an interview\n- Cloud/deployment architecture depth (Jenkins CI/CD is real experience, but it's not the same as being able to reason about AWS service choices)\n\n### 1.6 The Strategic Call: AI Engineer, Not ML Engineer\n\nThis distinction matters enough to state plainly, because it determines what you spend your limited hours on.\n\n**ML Engineer / LLM Engineer** — trains, fine-tunes, and optimizes models from the inside. Requires real depth in linear algebra, probability/statistics, and frameworks like PyTorch/TensorFlow. Realistic timeline to competitive: 12–24+ months of focused study, often alongside formal coursework. Not what you're asking for, and not necessary for the roles your profile fits.\n\n**AI Engineer** — takes existing foundation models (GPT, Claude, Gemini, Llama) via API and builds reliable, production-grade *systems* around them: RAG pipelines, agents, tool-calling workflows, evaluation harnesses. Requires strong software engineering (you have this), Python, and applied understanding of LLM behavior — not model internals. This is a software engineering job with an AI-shaped surface area, and it's the fastest, highest-upside move for someone already building production software, which is exactly your position.\n\nMarket data backs this, and not just from one source: current industry comparisons describe the field shifting hard toward AI engineer roles for working software engineers specifically *because* you keep everything you already know and layer applied-AI skills on top, rather than starting a new specialization from zero. Broader India-specific data points the same direction — a July 2026 hiring report tracking 18,400+ Indian tech listings found AI Engineer roles growing faster month-over-month than any other tracked role (+21%), averaging ₹18.8 LPA, with Bengaluru alone accounting for over a third of listings; separately, \"AI-Integrated Full-Stack Developer\" is now named explicitly as one of the highest-demand full-stack role categories in India for 2026, which is precisely the hybrid position this roadmap is built to get you into. That's this roadmap's entire bet. Every AI-track item below (Python, RAG, vector DBs, agents, MCP) is chosen because it serves the AI Engineer path — not the ML research path.\n\n---\n\n"
+      },
+      {
+        "id": "part-2-reality-check",
+        "title": "Part 2 — Reality Check",
+        "level": 2,
+        "contentMarkdown": "## Part 2 — Reality Check\n\n### 2.1 What 6 Months Can Realistically Buy You\n\nBeing direct, as you asked:\n\n- **Full Stack readiness: very achievable, close to done.** You're not starting from zero — you're closing five well-defined gaps (SQL, testing, DSA, system design, Docker/cloud) on top of a genuinely strong existing base. Six months at a sustainable pace comfortably gets you interview-ready across the mid-level Full Stack market.\n- **\"AI Engineer\" (applied/product AI, RAG + agents): achievable and realistic.** This is a software-engineering skill layered on top of skills you already have. Six months is enough to build 2–3 genuinely strong, defensible AI-integrated projects and speak fluently about the concepts.\n- **\"ML Engineer\" (training/fine-tuning models from scratch, research-depth math): not realistic in 6 months alongside a full-time job**, and — per the strategic call above — not the path that matches either your background or where the market is pulling. If a role explicitly demands this, it's outside this roadmap's scope; that's a 12–24 month investment with a different daily structure (much more math, much less shipping).\n- **DSA depth vs. breadth.** ~180–200 problems over 6 months (detailed in Part 4) is a strong bar for mid-tier-and-above product companies and matches what most working engineers achieve in this timeframe. If you specifically target FAANG-tier companies, expect their bar to sit higher (often 300–400+ problems, refined over a longer window) — worth knowing now rather than discovering it in month 5.\n- **Doing both tracks at once means slower depth in each** than focusing on one alone. The sequencing below is deliberately designed so Full Stack fundamentals (which you're closer to finishing) land first, and AI depth builds on top — so if time gets tight anywhere, you fall back to \"strong Full Stack engineer with real applied-AI experience,\" which is itself a highly competitive, hard-to-fake position, not a failure state.\n\n### 2.2 Your Weekly Time Budget\n\nBuilt around 10 AM–7 PM weekdays (sometimes 8 PM), with burnout avoidance as a hard constraint — and restructured around single-subject focus per session, not split hours. That's the right call for technical material: switching subjects mid-session costs you the ramp-up time twice, and real understanding needs enough unbroken time to read/watch *and* immediately practice, not just skim two things shallowly.\n\n| Day | Window | Focus (one subject, full session) | Time |\n|---|---|---|---|\n| Mon | 8:30–10:30 PM | DSA — full session | 2h |\n| Tue | 8:30–10:30 PM | Full-Stack topic — full session | 2h |\n| Wed | 8:30–10:30 PM | DSA — full session | 2h |\n| Thu | 8:30–10:30 PM | AI/Python topic — full session | 2h |\n| Fri | Flexible | Light DSA review, or fully off | 0–1h |\n| Sat | Morning + afternoon | Project work — one continuous focus (the mid-session break is for rest, not for switching subjects) | 4h |\n| Sun | Morning | One single-focus block, rotating weekly: DSA weak-spot review, OR extended theory/course video, OR extra project time — whichever the week needs most | 2.5h |\n| Sun | End of session | Logistics only — plan next week. Not a learning task, so it doesn't break the single-focus rule | 0.5h |\n| Sun | Afternoon/evening | Rest — protected, not optional | 0h |\n\n**Total: ~15–16 hrs/week → ~65–70 hrs/month → ~400–420 hrs over 6 months.** Same total as the original design — this repackages the hours into deeper, uninterrupted blocks, it doesn't add hours.\n\n**How this maps onto the month-by-month tables in Part 3:** the \"DSA\" column = your Monday + Wednesday sessions. The \"Full-Stack\" column = your Tuesday session. The \"AI/Python\" column = your Thursday session. Project work = mostly Saturday, with Sunday as overflow if something needs more room that week.\n\n**On 8 PM days:** don't try to force the full 2h block in — shift to 9:00–10:30 PM (1.5h) and keep it single-subject, just shorter. A shorter uninterrupted block beats a full-length one chopped into two subjects.\n\n**Non-negotiable:** at least one full day off per week (built in above as Sunday evening + flexible Friday). If you miss a day, don't double up the next day to \"catch up\" — just resume the plan. Catch-up cramming is the single most common cause of burnout-driven quitting in self-study plans like this one.\n\n### 2.3 Trade-offs, Stated Plainly\n\n1. **Depth vs. breadth in DSA:** you're optimizing for \"strong at most companies,\" not \"strongest possible at any company.\" If a specific FAANG-tier interview appears on your calendar, you'll want a 3–4 week intensive bump beyond this plan.\n2. **AI Engineer vs. ML Engineer:** covered in 1.6 — this roadmap deliberately does not chase deep ML math or from-scratch model training. That's the right call for your timeline and background, but it does mean roles that specifically want research-level ML depth stay out of reach after 6 months.\n3. **Two tracks, one calendar:** if a month runs short, Part 9 tells you exactly what to cut and what to protect. Full Stack fundamentals are protected first; the more exploratory AI-agent work is the first to compress.\n4. **Simultaneous job interviewing:** Months 5–6 assume you're also actively interviewing, which eats into study time. That's intentional — the point of the roadmap is to get hired, not to keep studying indefinitely.\n\n---\n\n"
+      },
+      {
+        "id": "part-6-github-resume",
+        "title": "Part 6 — GitHub & Resume",
+        "level": 2,
+        "contentMarkdown": "## Part 6 — GitHub & Resume\n\n### 6.1 What your GitHub actually shows right now\n\nChecked directly (github.com/prasanthkrjha): 5 public repos — `BlogPage`, `Student-Enrollment-System`, `Weather-Update`, `dashboard-react`, `LandingPage`. These read as early-coursework projects. None of your real, production-grade work (Sangeetha Connect, Physynex, Croire Paints) has a public repo — understandably, since two are proprietary/client work. But the practical effect is that anyone who clicks through from your resume to your GitHub right now sees a much weaker signal than your actual level.\n\n**This is exactly what Months 3–5's flagship projects are designed to fix** — they're deliberately built as new, standalone, public repos rather than changes buried inside private codebases.\n\n**Concrete actions:**\n- [ ] Add `github.com/prasanthkrjha` to your resume header — it's linked from your portfolio site but currently missing from the resume itself, which is the document ATS systems and recruiters scan first.\n- [ ] Add a profile README (a repo named exactly `prasanthkrjha/prasanthkrjha`) — short intro, current focus (Full Stack + Applied AI), pinned project links.\n- [ ] Once Months 3–5 projects are live, pin them (RAG engine, agentic feature, capstone) so they're what a visitor sees first — you don't need to delete the older repos, just stop leading with them.\n- [ ] Each new repo: proper README (problem, architecture, tech stack, live link, screenshots, setup steps), meaningful commit history — not `fix`, `fix2`, `final fix`.\n- [ ] Optional, lower priority: one or two small open-source contributions (docs fixes, small bug fixes) to a library you're already using (LangChain, a UI library) — real but not essential signal.\n\n### 6.2 Resume Adjustments\n\nYour resume is already in solid shape — quantified bullets, clean ATS-friendly structure, no fluff. Specific additions as your skills land, not all at once:\n\n- **Immediately:** add the GitHub link (above).\n- **After Month 3:** once the RAG engine repo is live, it's your strongest possible bullet — a standalone, open-source RAG module with a real integration, distinct from \"used the OpenAI API.\"\n- **After Month 4:** add a distinct \"AI/ML Engineering\" skills subsection (separate from your current \"AI & Integrations\" line) once Python, vector DBs, and agent frameworks are genuinely in daily use — this is what lets ATS keyword scans and recruiters searching for \"AI Engineer\" actually surface you.\n- **Once testing is real (Month 1+):** a short line reflecting test coverage practice, either in a project bullet or the skills section.\n- **Worth considering, space permitting:** Croire Paints (croirepaints.com) isn't on your resume at all right now, and it shows Three.js/3D work — a different axis than your other two listed projects. Only add it if you have room without crowding the AI story, which should stay the lead differentiator.\n- **Keep the one-page discipline** you already have — resist the urge to add everything at once as new skills land.\n\n---\n\n"
+      },
+      {
+        "id": "part-7-interview-preparation",
+        "title": "Part 7 — Interview Preparation",
+        "level": 2,
+        "contentMarkdown": "## Part 7 — Interview Preparation\n\n### 7.1 Technical Topics to Cover\n\n**Full-stack conceptual (you're closer here than you think — extend, don't restart):**\nReact internals (reconciliation, rendering behavior, hooks rules, closures) · Node.js event loop · REST API design principles · database indexing & normalization · caching strategies (client, CDN, server, DB-level) · auth patterns (JWT vs. sessions) · CORS. You already have a 30-question interview-prep document from an earlier session covering React/JS fundamentals, the Node.js middleware/BFF pattern, and Gen AI/Physynex architecture at the conceptual level — treat that as your base layer for process and concept questions. Its Physynex answers cover the *what and why*; pair them with Month 3's rebuild so you can also answer the *how*, line by line, when someone digs in.\n\n**AI/LLM conceptual (new ground — this is where you need the most reps):**\nHow RAG actually works end-to-end · chunking strategy trade-offs · when vector search beats keyword search (and when it doesn't) · embedding model selection trade-offs · hallucination mitigation approaches · prompt injection awareness (genuinely relevant to you — you already specified red-flag/guardrail detection for Physynex, so frame this as an extension of the security thinking you already demonstrated at the product level, now backed by Month 3's hands-on rebuild) · agent architecture patterns (the ReAct loop, tool calling, single-agent vs. multi-agent) · fine-tuning vs. RAG vs. prompting trade-offs.\n\n**DSA & System Design:** covered in Parts 3 and 4.\n\n### 7.2 Behavioral Preparation\n\nUse the STAR method, and build your story bank from bullets you already have real evidence for:\n- The Redux/Context refactor (30%+ maintainability) → *technical decision-making, code quality ownership*\n- HubSpot/Webflow/ZeroBounce integration (25% efficiency) → *cross-functional collaboration, ambiguity*\n- The Physynex retrieval pipeline (the original spec and direction) → *initiative, product thinking, translating a real user need (patient safety, lead quality) into AI feature requirements*\n- The Month 3 rebuild and Month 4 agent-building work from this roadmap → *self-directed technical learning, closing your own gaps deliberately, growth mindset*\n- Physynex and Croire Paints as products, not just codebases → *ownership, end-to-end thinking, entrepreneurial range*\n\n### 7.3 Mock Interviews & Coding Practice Cadence\n\n- **Months 1–4:** untimed DSA practice, focus on pattern recognition.\n- **Month 5:** first mock interviews — Pramp (free, peer-matched) or Interviewing.io (free tier) for technical rounds; record yourself for behavioral answers and review the playback.\n- **Month 6:** 1 mock interview per week minimum (technical, system design, or behavioral, rotating), plus timed LeetCode practice under interview conditions.\n- Claude itself is a free, always-available option for drilling behavioral answers or talking through a system design out loud — useful between scheduled mocks, not a replacement for them.\n\n---\n\n"
+      }
+    ],
+    "weeklyTimeBudget": {
+      "headers": [
+        "Day",
+        "Window",
+        "Focus (one subject, full session)",
+        "Time"
+      ],
+      "rows": [
+        [
+          "Mon",
+          "8:30–10:30 PM",
+          "DSA — full session",
+          "2h"
+        ],
+        [
+          "Tue",
+          "8:30–10:30 PM",
+          "Full-Stack topic — full session",
+          "2h"
+        ],
+        [
+          "Wed",
+          "8:30–10:30 PM",
+          "DSA — full session",
+          "2h"
+        ],
+        [
+          "Thu",
+          "8:30–10:30 PM",
+          "AI/Python topic — full session",
+          "2h"
+        ],
+        [
+          "Fri",
+          "Flexible",
+          "Light DSA review, or fully off",
+          "0–1h"
+        ],
+        [
+          "Sat",
+          "Morning + afternoon",
+          "Project work — one continuous focus (the mid-session break is for rest, not for switching subjects)",
+          "4h"
+        ],
+        [
+          "Sun",
+          "Morning",
+          "One single-focus block, rotating weekly: DSA weak-spot review, OR extended theory/course video, OR extra project time — whichever the week needs most",
+          "2.5h"
+        ],
+        [
+          "Sun",
+          "End of session",
+          "Logistics only — plan next week. Not a learning task, so it doesn't break the single-focus rule",
+          "0.5h"
+        ],
+        [
+          "Sun",
+          "Afternoon/evening",
+          "Rest — protected, not optional",
+          "0h"
+        ]
+      ]
+    }
+  },
+  "syllabus": {
+    "title": "Full Stack + AI Engineering — Complete Syllabus",
+    "subtitle": "A companion to your 6-month roadmap. The roadmap tells you when (week-by-week, tied to your calendar). This tells you what, in full — every concept broken down to the level you actually search and learn at, with the verified resource for each, and a fallback search term for anything not explicitly covered. Use this as your master checklist; check off units as you close them.",
+    "curriculumMap": {
+      "headers": [
+        "#",
+        "Module",
+        "Units",
+        "Tier",
+        "Rough Hours"
+      ],
+      "rows": [
+        [
+          "1",
+          "Data Structures & Algorithms",
+          "18",
+          "🔴",
+          "130–150h"
+        ],
+        [
+          "2",
+          "Databases",
+          "3",
+          "🔴",
+          "20–25h"
+        ],
+        [
+          "3",
+          "Testing",
+          "2",
+          "🔴",
+          "10–12h"
+        ],
+        [
+          "4",
+          "DevOps & Cloud",
+          "4",
+          "🔴/🟡",
+          "25–30h"
+        ],
+        [
+          "5",
+          "System Design",
+          "5",
+          "🔴",
+          "25–30h"
+        ],
+        [
+          "6",
+          "Python & Data Foundations",
+          "2",
+          "🔴",
+          "15–20h"
+        ],
+        [
+          "7",
+          "Machine Learning Fundamentals",
+          "2",
+          "🔴",
+          "20–25h"
+        ],
+        [
+          "8",
+          "LLM & Generative AI Engineering",
+          "9",
+          "🔴/🟡",
+          "45–55h"
+        ],
+        [
+          "9",
+          "Interview Readiness",
+          "3",
+          "🔴",
+          "ongoing"
+        ]
+      ]
+    },
+    "modules": [
+      {
+        "id": "module-1",
+        "number": 1,
+        "title": "Data Structures & Algorithms",
+        "tier": "essential",
+        "objective": "solve unseen problems, in a pattern you recognize, inside a 30–45 minute interview window. Primary spine for the whole module: takeuforward.org/strivers-a2z-dsa-course — follow the site itself in sequence (not the YouTube channel browsed on its own — Striver, the creator, says this directly). It embeds the right video at the right point and already matches the unit order below. Secondary, per-unit: NeetCode 150 (neetcode.io/practice) — same patterns, one short video per problem; use when Striver's explanation of that specific unit isn't landing. Solve on: LeetCode (free tier).",
+        "units": [
+          {
+            "id": "1.1",
+            "moduleNumber": 1,
+            "title": "Complexity Analysis",
+            "concepts": [
+              "Big-O notation",
+              "time vs. space complexity",
+              "best/average/worst case"
+            ],
+            "doneCriteria": "Can state the complexity of any solution you write without thinking hard",
+            "tier": "essential",
+            "raw": "[\"1.1 Complexity Analysis\",\"Big-O notation, time vs. space complexity, best/average/worst case\",\"Can state the complexity of any solution you write without thinking hard\"]"
+          },
+          {
+            "id": "1.2",
+            "moduleNumber": 1,
+            "title": "Arrays & Hashing",
+            "concepts": [
+              "Hashmap/hashset usage",
+              "frequency counting",
+              "prefix sums",
+              "two-sum pattern",
+              "grouping/categorization problems"
+            ],
+            "doneCriteria": "~12–15 problems solved",
+            "tier": "essential",
+            "raw": "[\"1.2 Arrays & Hashing\",\"Hashmap/hashset usage, frequency counting, prefix sums, two-sum pattern, grouping/categorization problems\",\"~12–15 problems solved\"]"
+          },
+          {
+            "id": "1.3",
+            "moduleNumber": 1,
+            "title": "Two Pointers",
+            "concepts": [
+              "Opposite-direction pointers",
+              "same-direction pointers",
+              "sorted-array techniques"
+            ],
+            "doneCriteria": "~8–10 problems",
+            "tier": "essential",
+            "raw": "[\"1.3 Two Pointers\",\"Opposite-direction pointers, same-direction pointers, sorted-array techniques\",\"~8–10 problems\"]"
+          },
+          {
+            "id": "1.4",
+            "moduleNumber": 1,
+            "title": "Sliding Window",
+            "concepts": [
+              "Fixed-size window",
+              "variable-size window",
+              "substring problems"
+            ],
+            "doneCriteria": "~8 problems",
+            "tier": "essential",
+            "raw": "[\"1.4 Sliding Window\",\"Fixed-size window, variable-size window, substring problems\",\"~8 problems\"]"
+          },
+          {
+            "id": "1.5",
+            "moduleNumber": 1,
+            "title": "Stack",
+            "concepts": [
+              "Monotonic stack",
+              "parentheses/bracket matching",
+              "next-greater-element"
+            ],
+            "doneCriteria": "~10 problems",
+            "tier": "essential",
+            "raw": "[\"1.5 Stack\",\"Monotonic stack, parentheses/bracket matching, next-greater-element\",\"~10 problems\"]"
+          },
+          {
+            "id": "1.6",
+            "moduleNumber": 1,
+            "title": "Binary Search",
+            "concepts": [
+              "Search-space reduction",
+              "\"search on the answer",
+              "\" rotated sorted arrays"
+            ],
+            "doneCriteria": "~10 problems",
+            "tier": "essential",
+            "raw": "[\"1.6 Binary Search\",\"Search-space reduction, \\\"search on the answer,\\\" rotated sorted arrays\",\"~10 problems\"]"
+          },
+          {
+            "id": "1.7",
+            "moduleNumber": 1,
+            "title": "Linked List",
+            "concepts": [
+              "Reversal",
+              "fast-slow pointers (cycle detection)",
+              "merge operations",
+              "dummy-node technique"
+            ],
+            "doneCriteria": "~12 problems",
+            "tier": "essential",
+            "raw": "[\"1.7 Linked List\",\"Reversal, fast-slow pointers (cycle detection), merge operations, dummy-node technique\",\"~12 problems\"]"
+          },
+          {
+            "id": "1.8",
+            "moduleNumber": 1,
+            "title": "Trees",
+            "concepts": [
+              "DFS (preorder/inorder/postorder)",
+              "BFS (level order)",
+              "BST properties",
+              "tree construction/serialization"
+            ],
+            "doneCriteria": "~18 problems",
+            "tier": "essential",
+            "raw": "[\"1.8 Trees\",\"DFS (preorder/inorder/postorder), BFS (level order), BST properties, tree construction/serialization\",\"~18 problems\"]"
+          },
+          {
+            "id": "1.9",
+            "moduleNumber": 1,
+            "title": "Tries",
+            "concepts": [
+              "Prefix trees",
+              "word search / autocomplete patterns"
+            ],
+            "doneCriteria": "~5 problems",
+            "tier": "essential",
+            "raw": "[\"1.9 Tries\",\"Prefix trees, word search / autocomplete patterns\",\"~5 problems\"]"
+          },
+          {
+            "id": "1.10",
+            "moduleNumber": 1,
+            "title": "Heap / Priority Queue",
+            "concepts": [
+              "Min-heap vs. max-heap",
+              "k-th largest/smallest",
+              "merge k sorted lists"
+            ],
+            "doneCriteria": "~10 problems",
+            "tier": "essential",
+            "raw": "[\"1.10 Heap / Priority Queue\",\"Min-heap vs. max-heap, k-th largest/smallest, merge k sorted lists\",\"~10 problems\"]"
+          },
+          {
+            "id": "1.11",
+            "moduleNumber": 1,
+            "title": "Backtracking",
+            "concepts": [
+              "Subsets",
+              "permutations",
+              "combinations",
+              "constraint satisfaction (N-Queens style)"
+            ],
+            "doneCriteria": "~10 problems",
+            "tier": "essential",
+            "raw": "[\"1.11 Backtracking\",\"Subsets, permutations, combinations, constraint satisfaction (N-Queens style)\",\"~10 problems\"]"
+          },
+          {
+            "id": "1.12",
+            "moduleNumber": 1,
+            "title": "Intervals",
+            "concepts": [
+              "Merge intervals",
+              "interval scheduling",
+              "overlap detection"
+            ],
+            "doneCriteria": "~8 problems",
+            "tier": "essential",
+            "raw": "[\"1.12 Intervals\",\"Merge intervals, interval scheduling, overlap detection\",\"~8 problems\"]"
+          },
+          {
+            "id": "1.13",
+            "moduleNumber": 1,
+            "title": "Graphs",
+            "concepts": [
+              "BFS/DFS traversal",
+              "connected components",
+              "cycle detection",
+              "matrix-as-graph problems"
+            ],
+            "doneCriteria": "~15 problems",
+            "tier": "essential",
+            "raw": "[\"1.13 Graphs\",\"BFS/DFS traversal, connected components, cycle detection, matrix-as-graph problems\",\"~15 problems\"]"
+          },
+          {
+            "id": "1.14",
+            "moduleNumber": 1,
+            "title": "Advanced Graphs",
+            "concepts": [
+              "Union-Find (Disjoint Set)",
+              "Dijkstra's shortest path",
+              "Minimum Spanning Tree (Prim's/Kruskal's)",
+              "topological sort"
+            ],
+            "doneCriteria": "~10 problems",
+            "tier": "essential",
+            "raw": "[\"1.14 Advanced Graphs\",\"Union-Find (Disjoint Set), Dijkstra's shortest path, Minimum Spanning Tree (Prim's/Kruskal's), topological sort\",\"~10 problems\"]"
+          },
+          {
+            "id": "1.15",
+            "moduleNumber": 1,
+            "title": "Greedy",
+            "concepts": [
+              "Activity selection",
+              "interval-scheduling greedy proofs",
+              "exchange arguments"
+            ],
+            "doneCriteria": "~8 problems",
+            "tier": "essential",
+            "raw": "[\"1.15 Greedy\",\"Activity selection, interval-scheduling greedy proofs, exchange arguments\",\"~8 problems\"]"
+          },
+          {
+            "id": "1.16",
+            "moduleNumber": 1,
+            "title": "1-D Dynamic Programming",
+            "concepts": [
+              "Fibonacci-style recurrence",
+              "house robber",
+              "climbing stairs",
+              "coin change",
+              "memoization vs. tabulation"
+            ],
+            "doneCriteria": "~15 problems",
+            "tier": "essential",
+            "raw": "[\"1.16 1-D Dynamic Programming\",\"Fibonacci-style recurrence, house robber, climbing stairs, coin change, memoization vs. tabulation\",\"~15 problems\"]"
+          },
+          {
+            "id": "1.17",
+            "moduleNumber": 1,
+            "title": "2-D Dynamic Programming",
+            "concepts": [
+              "Grid paths",
+              "longest common subsequence",
+              "edit distance",
+              "0/1 knapsack"
+            ],
+            "doneCriteria": "~12 problems",
+            "tier": "essential",
+            "raw": "[\"1.17 2-D Dynamic Programming\",\"Grid paths, longest common subsequence, edit distance, 0/1 knapsack\",\"~12 problems\"]"
+          },
+          {
+            "id": "1.18",
+            "moduleNumber": 1,
+            "title": "Bit Manipulation & Math",
+            "concepts": [
+              "XOR tricks",
+              "bitmasking",
+              "GCD/LCM",
+              "modular arithmetic"
+            ],
+            "doneCriteria": "~8 problems",
+            "tier": "essential",
+            "raw": "[\"1.18 Bit Manipulation & Math\",\"XOR tricks, bitmasking, GCD/LCM, modular arithmetic\",\"~8 problems\"]"
+          }
+        ],
+        "raw": "## MODULE 1 — Data Structures & Algorithms 🔴\n\n**Objective:** solve unseen problems, in a pattern you recognize, inside a 30–45 minute interview window.\n**Primary spine for the whole module:** takeuforward.org/strivers-a2z-dsa-course — follow the *site* itself in sequence (not the YouTube channel browsed on its own — Striver, the creator, says this directly). It embeds the right video at the right point and already matches the unit order below.\n**Secondary, per-unit:** NeetCode 150 (neetcode.io/practice) — same patterns, one short video per problem; use when Striver's explanation of that specific unit isn't landing.\n**Solve on:** LeetCode (free tier).\n\n| Unit | Concepts inside it | \"Done\" looks like |\n|---|---|---|\n| 1.1 Complexity Analysis | Big-O notation, time vs. space complexity, best/average/worst case | Can state the complexity of any solution you write without thinking hard |\n| 1.2 Arrays & Hashing | Hashmap/hashset usage, frequency counting, prefix sums, two-sum pattern, grouping/categorization problems | ~12–15 problems solved |\n| 1.3 Two Pointers | Opposite-direction pointers, same-direction pointers, sorted-array techniques | ~8–10 problems |\n| 1.4 Sliding Window | Fixed-size window, variable-size window, substring problems | ~8 problems |\n| 1.5 Stack | Monotonic stack, parentheses/bracket matching, next-greater-element | ~10 problems |\n| 1.6 Binary Search | Search-space reduction, \"search on the answer,\" rotated sorted arrays | ~10 problems |\n| 1.7 Linked List | Reversal, fast-slow pointers (cycle detection), merge operations, dummy-node technique | ~12 problems |\n| 1.8 Trees | DFS (preorder/inorder/postorder), BFS (level order), BST properties, tree construction/serialization | ~18 problems |\n| 1.9 Tries | Prefix trees, word search / autocomplete patterns | ~5 problems |\n| 1.10 Heap / Priority Queue | Min-heap vs. max-heap, k-th largest/smallest, merge k sorted lists | ~10 problems |\n| 1.11 Backtracking | Subsets, permutations, combinations, constraint satisfaction (N-Queens style) | ~10 problems |\n| 1.12 Intervals | Merge intervals, interval scheduling, overlap detection | ~8 problems |\n| 1.13 Graphs | BFS/DFS traversal, connected components, cycle detection, matrix-as-graph problems | ~15 problems |\n| 1.14 Advanced Graphs | Union-Find (Disjoint Set), Dijkstra's shortest path, Minimum Spanning Tree (Prim's/Kruskal's), topological sort | ~10 problems |\n| 1.15 Greedy | Activity selection, interval-scheduling greedy proofs, exchange arguments | ~8 problems |\n| 1.16 1-D Dynamic Programming | Fibonacci-style recurrence, house robber, climbing stairs, coin change, memoization vs. tabulation | ~15 problems |\n| 1.17 2-D Dynamic Programming | Grid paths, longest common subsequence, edit distance, 0/1 knapsack | ~12 problems |\n| 1.18 Bit Manipulation & Math | XOR tricks, bitmasking, GCD/LCM, modular arithmetic | ~8 problems |\n\n**Practice discipline (applies to every unit):** first pass on a new unit — understand the *approach* untimed, watch the video after attempting, not before. Once a unit has 8–10 problems behind it, start timing yourself (25–30 min/medium). Every 2 weeks, cold-redo 2–3 problems from a unit you learned earlier — that's what builds retention, not new problems alone.\n\n---\n\n"
+      },
+      {
+        "id": "module-2",
+        "number": 2,
+        "title": "Databases",
+        "tier": "essential",
+        "objective": "design a real relational schema, write real queries, and reason about when to cache.",
+        "units": [
+          {
+            "id": "2.1",
+            "moduleNumber": 2,
+            "title": "SQL Fundamentals",
+            "concepts": [
+              "SELECT/JOIN types (inner",
+              "left",
+              "right",
+              "full)",
+              "WHERE/GROUP BY/HAVING",
+              "aggregate functions",
+              "subqueries"
+            ],
+            "primaryResource": "freeCodeCamp — \"SQL Tutorial: Full Database Course for Beginners\" (Mike Dane), free YouTube, project-based",
+            "secondaryResource": "Search \"SQLBolt interactive\" for a hands-in-browser alternative",
+            "tier": "essential",
+            "raw": "[\"2.1 SQL Fundamentals\",\"SELECT/JOIN types (inner, left, right, full), WHERE/GROUP BY/HAVING, aggregate functions, subqueries\",\"freeCodeCamp — \\\"SQL Tutorial: Full Database Course for Beginners\\\" (Mike Dane), free YouTube, project-based\",\"Search \\\"SQLBolt interactive\\\" for a hands-in-browser alternative\",\"🔴\"]"
+          },
+          {
+            "id": "2.2",
+            "moduleNumber": 2,
+            "title": "PostgreSQL & Database Design",
+            "concepts": [
+              "Primary/foreign keys",
+              "normalization (1NF–3NF)",
+              "indexing",
+              "transactions",
+              "Postgres-specific syntax"
+            ],
+            "primaryResource": "postgresql.org/docs/current/tutorial.html — go here after 2.1",
+            "secondaryResource": "Search \"database normalization tutorial\" and \"database indexing explained\"",
+            "tier": "essential",
+            "raw": "[\"2.2 PostgreSQL & Database Design\",\"Primary/foreign keys, normalization (1NF–3NF), indexing, transactions, Postgres-specific syntax\",\"postgresql.org/docs/current/tutorial.html — go here after 2.1\",\"Search \\\"database normalization tutorial\\\" and \\\"database indexing explained\\\"\",\"🔴\"]"
+          },
+          {
+            "id": "2.3",
+            "moduleNumber": 2,
+            "title": "Redis & Caching",
+            "concepts": [
+              "Key-value caching",
+              "TTL/expiry",
+              "cache-aside pattern",
+              "when caching helps vs. hides a real problem"
+            ],
+            "primaryResource": "Search \"Redis crash course Node.js\"",
+            "secondaryResource": "Search \"Redis crash course\" (creator-agnostic)",
+            "tier": "recommended",
+            "raw": "[\"2.3 Redis & Caching\",\"Key-value caching, TTL/expiry, cache-aside pattern, when caching helps vs. hides a real problem\",\"Search \\\"Redis crash course Node.js\\\"\",\"Search \\\"Redis crash course\\\" (creator-agnostic)\",\"🟡\"]"
+          }
+        ],
+        "raw": "## MODULE 2 — Databases 🔴\n\n**Objective:** design a real relational schema, write real queries, and reason about when to cache.\n\n| Unit | Concepts inside it | Primary resource | If this doesn't land | Tier |\n|---|---|---|---|---|\n| 2.1 SQL Fundamentals | SELECT/JOIN types (inner, left, right, full), WHERE/GROUP BY/HAVING, aggregate functions, subqueries | freeCodeCamp — \"SQL Tutorial: Full Database Course for Beginners\" (Mike Dane), free YouTube, project-based | Search \"SQLBolt interactive\" for a hands-in-browser alternative | 🔴 |\n| 2.2 PostgreSQL & Database Design | Primary/foreign keys, normalization (1NF–3NF), indexing, transactions, Postgres-specific syntax | postgresql.org/docs/current/tutorial.html — go here *after* 2.1 | Search \"database normalization tutorial\" and \"database indexing explained\" | 🔴 |\n| 2.3 Redis & Caching | Key-value caching, TTL/expiry, cache-aside pattern, when caching helps vs. hides a real problem | Search \"Redis crash course Node.js\" | Search \"Redis crash course\" (creator-agnostic) | 🟡 |\n\n---\n\n"
+      },
+      {
+        "id": "module-3",
+        "number": 3,
+        "title": "Testing",
+        "tier": "essential",
+        "objective": "ship code with real automated coverage, not \"it worked when I clicked around.\"",
+        "units": [
+          {
+            "id": "3.1",
+            "moduleNumber": 3,
+            "title": "Unit Testing (Jest)",
+            "concepts": [
+              "Test structure (describe/it)",
+              "assertions",
+              "mocking functions",
+              "beforeEach/afterEach",
+              "code coverage"
+            ],
+            "primaryResource": "jestjs.io/docs/getting-started (official docs) + search \"Programming with Mosh React Testing Library\" for a walkthrough",
+            "secondaryResource": "Search \"Lama Dev React Testing\" — free YouTube, real-world Axios-mocking example",
+            "tier": "essential",
+            "raw": "[\"3.1 Unit Testing (Jest)\",\"Test structure (describe/it), assertions, mocking functions, beforeEach/afterEach, code coverage\",\"jestjs.io/docs/getting-started (official docs) + search \\\"Programming with Mosh React Testing Library\\\" for a walkthrough\",\"Search \\\"Lama Dev React Testing\\\" — free YouTube, real-world Axios-mocking example\",\"🔴\"]"
+          },
+          {
+            "id": "3.2",
+            "moduleNumber": 3,
+            "title": "Component/Integration Testing (RTL)",
+            "concepts": [
+              "Testing behavior over implementation",
+              "querying by role/text (not by CSS class)",
+              "simulating user events",
+              "async utilities",
+              "mocking API calls"
+            ],
+            "primaryResource": "testing-library.com/docs/react-testing-library/intro (official docs)",
+            "secondaryResource": "Same as above — Mosh/Lama Dev cover both Jest and RTL together",
+            "tier": "essential",
+            "raw": "[\"3.2 Component/Integration Testing (RTL)\",\"Testing behavior over implementation, querying by role/text (not by CSS class), simulating user events, async utilities, mocking API calls\",\"testing-library.com/docs/react-testing-library/intro (official docs)\",\"Same as above — Mosh/Lama Dev cover both Jest and RTL together\",\"🔴\"]"
+          }
+        ],
+        "raw": "## MODULE 3 — Testing 🔴\n\n**Objective:** ship code with real automated coverage, not \"it worked when I clicked around.\"\n\n| Unit | Concepts inside it | Primary resource | If this doesn't land | Tier |\n|---|---|---|---|---|\n| 3.1 Unit Testing (Jest) | Test structure (describe/it), assertions, mocking functions, `beforeEach`/`afterEach`, code coverage | jestjs.io/docs/getting-started (official docs) + search \"Programming with Mosh React Testing Library\" for a walkthrough | Search \"Lama Dev React Testing\" — free YouTube, real-world Axios-mocking example | 🔴 |\n| 3.2 Component/Integration Testing (RTL) | Testing behavior over implementation, querying by role/text (not by CSS class), simulating user events, async utilities, mocking API calls | testing-library.com/docs/react-testing-library/intro (official docs) | Same as above — Mosh/Lama Dev cover both Jest and RTL together | 🔴 |\n\n---\n\n"
+      },
+      {
+        "id": "module-4",
+        "number": 4,
+        "title": "DevOps & Cloud",
+        "tier": "essential",
+        "objective": "take something from \"runs on my machine\" to \"runs in production, on a schedule you don't have to babysit.\"",
+        "units": [
+          {
+            "id": "4.1",
+            "moduleNumber": 4,
+            "title": "Docker",
+            "concepts": [
+              "Images vs. containers",
+              "Dockerfile syntax",
+              "Docker Compose (multi-container apps)",
+              "volumes",
+              "basic networking"
+            ],
+            "primaryResource": "freeCodeCamp — \"Docker Full Course\", free YouTube",
+            "secondaryResource": "Search \"Docker crash course\"",
+            "tier": "essential",
+            "raw": "[\"4.1 Docker\",\"Images vs. containers, Dockerfile syntax, Docker Compose (multi-container apps), volumes, basic networking\",\"freeCodeCamp — \\\"Docker Full Course\\\", free YouTube\",\"Search \\\"Docker crash course\\\"\",\"🔴\"]"
+          },
+          {
+            "id": "4.2",
+            "moduleNumber": 4,
+            "title": "AWS Fundamentals",
+            "concepts": [
+              "EC2",
+              "S3",
+              "IAM basics",
+              "VPC basics",
+              "Elastic Beanstalk",
+              "free-tier limits"
+            ],
+            "primaryResource": "freeCodeCamp — \"AWS Certified Cloud Practitioner\" (Andrew Brown, ~14h), free YouTube",
+            "secondaryResource": "Search \"AWS fundamentals crash course\"",
+            "tier": "essential",
+            "raw": "[\"4.2 AWS Fundamentals\",\"EC2, S3, IAM basics, VPC basics, Elastic Beanstalk, free-tier limits\",\"freeCodeCamp — \\\"AWS Certified Cloud Practitioner\\\" (Andrew Brown, ~14h), free YouTube\",\"Search \\\"AWS fundamentals crash course\\\"\",\"🔴\"]"
+          },
+          {
+            "id": "4.3",
+            "moduleNumber": 4,
+            "title": "AWS Hands-On Deployment",
+            "concepts": [
+              "Actually containerizing + deploying a real project on AWS (ties 4.1+4.2 together)"
+            ],
+            "primaryResource": "freeCodeCamp — \"AWS Cloud Project Bootcamp\", free",
+            "secondaryResource": "—",
+            "tier": "essential",
+            "raw": "[\"4.3 AWS Hands-On Deployment\",\"Actually containerizing + deploying a real project on AWS (ties 4.1+4.2 together)\",\"freeCodeCamp — \\\"AWS Cloud Project Bootcamp\\\", free\",\"—\",\"🔴\"]"
+          },
+          {
+            "id": "4.4",
+            "moduleNumber": 4,
+            "title": "CI/CD & Observability",
+            "concepts": [
+              "GitHub Actions pipeline stages (build/test/deploy)",
+              "structured logging",
+              "error tracking (Sentry-style)"
+            ],
+            "primaryResource": "Search \"GitHub Actions tutorial freeCodeCamp\"; separately, \"Sentry Node.js tutorial\"",
+            "secondaryResource": "Search \"CI/CD pipeline explained\"",
+            "tier": "recommended",
+            "raw": "[\"4.4 CI/CD & Observability\",\"GitHub Actions pipeline stages (build/test/deploy), structured logging, error tracking (Sentry-style)\",\"Search \\\"GitHub Actions tutorial freeCodeCamp\\\"; separately, \\\"Sentry Node.js tutorial\\\"\",\"Search \\\"CI/CD pipeline explained\\\"\",\"🟡\"]"
+          }
+        ],
+        "raw": "## MODULE 4 — DevOps & Cloud 🔴 / 🟡\n\n**Objective:** take something from \"runs on my machine\" to \"runs in production, on a schedule you don't have to babysit.\"\n\n| Unit | Concepts inside it | Primary resource | If this doesn't land | Tier |\n|---|---|---|---|---|\n| 4.1 Docker | Images vs. containers, Dockerfile syntax, Docker Compose (multi-container apps), volumes, basic networking | freeCodeCamp — \"Docker Full Course\", free YouTube | Search \"Docker crash course\" | 🔴 |\n| 4.2 AWS Fundamentals | EC2, S3, IAM basics, VPC basics, Elastic Beanstalk, free-tier limits | freeCodeCamp — \"AWS Certified Cloud Practitioner\" (Andrew Brown, ~14h), free YouTube | Search \"AWS fundamentals crash course\" | 🔴 |\n| 4.3 AWS Hands-On Deployment | Actually containerizing + deploying a real project on AWS (ties 4.1+4.2 together) | freeCodeCamp — \"AWS Cloud Project Bootcamp\", free | — | 🔴 |\n| 4.4 CI/CD & Observability | GitHub Actions pipeline stages (build/test/deploy), structured logging, error tracking (Sentry-style) | Search \"GitHub Actions tutorial freeCodeCamp\"; separately, \"Sentry Node.js tutorial\" | Search \"CI/CD pipeline explained\" | 🟡 |\n\n---\n\n"
+      },
+      {
+        "id": "module-5",
+        "number": 5,
+        "title": "System Design",
+        "tier": "essential",
+        "objective": "hold a 45-minute design conversation without freezing, and reason about trade-offs out loud.",
+        "units": [
+          {
+            "id": "5.1",
+            "moduleNumber": 5,
+            "title": "Core Concepts",
+            "concepts": [
+              "Vertical vs. horizontal scaling",
+              "CAP theorem",
+              "latency vs. throughput",
+              "availability"
+            ],
+            "primaryResource": "Gaurav Sen (YouTube channel), free",
+            "tier": "essential",
+            "raw": "[\"5.1 Core Concepts\",\"Vertical vs. horizontal scaling, CAP theorem, latency vs. throughput, availability\",\"Gaurav Sen (YouTube channel), free\",\"🔴\"]"
+          },
+          {
+            "id": "5.2",
+            "moduleNumber": 5,
+            "title": "Networking & APIs",
+            "concepts": [
+              "Load balancers",
+              "API gateways",
+              "REST vs. RPC vs. GraphQL trade-offs",
+              "rate limiting"
+            ],
+            "primaryResource": "Gaurav Sen + ByteByteGo (YouTube + newsletter), free",
+            "tier": "essential",
+            "raw": "[\"5.2 Networking & APIs\",\"Load balancers, API gateways, REST vs. RPC vs. GraphQL trade-offs, rate limiting\",\"Gaurav Sen + ByteByteGo (YouTube + newsletter), free\",\"🔴\"]"
+          },
+          {
+            "id": "5.3",
+            "moduleNumber": 5,
+            "title": "Data & Storage at Scale",
+            "concepts": [
+              "SQL vs. NoSQL trade-offs",
+              "replication",
+              "sharding/partitioning",
+              "CDN caching",
+              "cache-invalidation strategies",
+              "consistent hashing"
+            ],
+            "primaryResource": "ByteByteGo, free; search \"system design primer\" on GitHub for a written companion",
+            "tier": "essential",
+            "raw": "[\"5.3 Data & Storage at Scale\",\"SQL vs. NoSQL trade-offs, replication, sharding/partitioning, CDN caching, cache-invalidation strategies, consistent hashing\",\"ByteByteGo, free; search \\\"system design primer\\\" on GitHub for a written companion\",\"🔴\"]"
+          },
+          {
+            "id": "5.4",
+            "moduleNumber": 5,
+            "title": "Async & Messaging",
+            "concepts": [
+              "Message queues",
+              "pub/sub",
+              "event-driven architecture"
+            ],
+            "primaryResource": "Search \"message queues explained system design\"",
+            "tier": "recommended",
+            "raw": "[\"5.4 Async & Messaging\",\"Message queues, pub/sub, event-driven architecture\",\"Search \\\"message queues explained system design\\\"\",\"🟡\"]"
+          },
+          {
+            "id": "5.5",
+            "moduleNumber": 5,
+            "title": "Classic Design Problems",
+            "concepts": [
+              "Design a URL shortener",
+              "a rate limiter",
+              "a chat app",
+              "a news feed",
+              "a notification system"
+            ],
+            "primaryResource": "Practice writing these out yourself (Excalidraw/draw.io), then check against Gaurav Sen's or ByteByteGo's version of the same problem",
+            "tier": "essential",
+            "raw": "[\"5.5 Classic Design Problems\",\"Design a URL shortener, a rate limiter, a chat app, a news feed, a notification system\",\"Practice writing these out yourself (Excalidraw/draw.io), then check against Gaurav Sen's or ByteByteGo's version of the same problem\",\"🔴\"]"
+          }
+        ],
+        "raw": "## MODULE 5 — System Design 🔴\n\n**Objective:** hold a 45-minute design conversation without freezing, and reason about trade-offs out loud.\n\n| Unit | Concepts inside it | Primary resource | Tier |\n|---|---|---|---|\n| 5.1 Core Concepts | Vertical vs. horizontal scaling, CAP theorem, latency vs. throughput, availability | Gaurav Sen (YouTube channel), free | 🔴 |\n| 5.2 Networking & APIs | Load balancers, API gateways, REST vs. RPC vs. GraphQL trade-offs, rate limiting | Gaurav Sen + ByteByteGo (YouTube + newsletter), free | 🔴 |\n| 5.3 Data & Storage at Scale | SQL vs. NoSQL trade-offs, replication, sharding/partitioning, CDN caching, cache-invalidation strategies, consistent hashing | ByteByteGo, free; search \"system design primer\" on GitHub for a written companion | 🔴 |\n| 5.4 Async & Messaging | Message queues, pub/sub, event-driven architecture | Search \"message queues explained system design\" | 🟡 |\n| 5.5 Classic Design Problems | Design a URL shortener, a rate limiter, a chat app, a news feed, a notification system | Practice writing these out yourself (Excalidraw/draw.io), then check against Gaurav Sen's or ByteByteGo's version of the same problem | 🔴 |\n\n*(Optional, paid, only if free resources aren't sticking: Grokking the System Design Interview on Educative — the closest thing to a \"gold standard\" structured course.)*\n\n---\n\n"
+      },
+      {
+        "id": "module-6",
+        "number": 6,
+        "title": "Python & Data Foundations",
+        "tier": "essential",
+        "objective": "Python stops feeling foreign; you can read, write, and debug it as fluently as you already do JS.",
+        "units": [
+          {
+            "id": "6.1",
+            "moduleNumber": 6,
+            "title": "Python Core Language",
+            "concepts": [
+              "Syntax",
+              "data types",
+              "control flow",
+              "functions",
+              "OOP (classes/inheritance)",
+              "virtual environments",
+              "pip",
+              "file I/O",
+              "JSON handling",
+              "requests library"
+            ],
+            "primaryResource": "freeCodeCamp — \"Learn Python – Full Course for Beginners\" (Mike Dane, ~4h), free YouTube. You already code professionally — move fast through syntax, slow down only where OOP feels genuinely new",
+            "tier": "essential",
+            "raw": "[\"6.1 Python Core Language\",\"Syntax, data types, control flow, functions, OOP (classes/inheritance), virtual environments, pip, file I/O, JSON handling, requests library\",\"freeCodeCamp — \\\"Learn Python – Full Course for Beginners\\\" (Mike Dane, ~4h), free YouTube. You already code professionally — move fast through syntax, slow down only where OOP feels genuinely new\",\"🔴\"]"
+          },
+          {
+            "id": "6.2",
+            "moduleNumber": 6,
+            "title": "NumPy & Pandas",
+            "concepts": [
+              "Arrays and vectorized operations (NumPy); DataFrames",
+              "cleaning",
+              "filtering",
+              "grouping",
+              "pivot tables (Pandas)"
+            ],
+            "primaryResource": "freeCodeCamp — \"Learn Python for Data Science\" (Frank Andrade, ~17h), free YouTube — covers both with real projects",
+            "tier": "essential",
+            "raw": "[\"6.2 NumPy & Pandas\",\"Arrays and vectorized operations (NumPy); DataFrames, cleaning, filtering, grouping, pivot tables (Pandas)\",\"freeCodeCamp — \\\"Learn Python for Data Science\\\" (Frank Andrade, ~17h), free YouTube — covers both with real projects\",\"🔴\"]"
+          }
+        ],
+        "raw": "## MODULE 6 — Python & Data Foundations 🔴\n\n**Objective:** Python stops feeling foreign; you can read, write, and debug it as fluently as you already do JS.\n\n| Unit | Concepts inside it | Primary resource | Tier |\n|---|---|---|---|\n| 6.1 Python Core Language | Syntax, data types, control flow, functions, OOP (classes/inheritance), virtual environments, `pip`, file I/O, JSON handling, `requests` library | freeCodeCamp — \"Learn Python – Full Course for Beginners\" (Mike Dane, ~4h), free YouTube. You already code professionally — move fast through syntax, slow down only where OOP feels genuinely new | 🔴 |\n| 6.2 NumPy & Pandas | Arrays and vectorized operations (NumPy); DataFrames, cleaning, filtering, grouping, pivot tables (Pandas) | freeCodeCamp — \"Learn Python for Data Science\" (Frank Andrade, ~17h), free YouTube — covers both with real projects | 🔴 |\n\n---\n\n"
+      },
+      {
+        "id": "module-7",
+        "number": 7,
+        "title": "Machine Learning Fundamentals",
+        "tier": "essential",
+        "objective": "understand and defend the ML workflow end to end — not research-depth math, workflow fluency.",
+        "units": [
+          {
+            "id": "7.1",
+            "moduleNumber": 7,
+            "title": "Core ML Concepts",
+            "concepts": [
+              "Supervised vs. unsupervised learning",
+              "train/test split",
+              "overfitting vs. underfitting",
+              "bias-variance trade-off",
+              "evaluation metrics (accuracy",
+              "precision/recall",
+              "RMSE)"
+            ],
+            "primaryResource": "StatQuest with Josh Starmer (YouTube channel), free — short 5–15 min videos on why each concept works",
+            "secondaryResource": "Watch alongside 7.2, not instead of it",
+            "tier": "essential",
+            "raw": "[\"7.1 Core ML Concepts\",\"Supervised vs. unsupervised learning, train/test split, overfitting vs. underfitting, bias-variance trade-off, evaluation metrics (accuracy, precision/recall, RMSE)\",\"StatQuest with Josh Starmer (YouTube channel), free — short 5–15 min videos on why each concept works\",\"Watch alongside 7.2, not instead of it\",\"🔴\"]"
+          },
+          {
+            "id": "7.2",
+            "moduleNumber": 7,
+            "title": "scikit-learn Practical",
+            "concepts": [
+              "Linear/logistic regression",
+              "decision trees",
+              "random forests",
+              "model training/evaluation code",
+              "cross-validation",
+              "feature scaling/encoding"
+            ],
+            "primaryResource": "freeCodeCamp — \"Machine Learning with Python and Scikit-Learn\" (Aakash N S, ~18h), free YouTube, hands-on",
+            "secondaryResource": "Search \"scikit-learn crash course\"",
+            "tier": "essential",
+            "raw": "[\"7.2 scikit-learn Practical\",\"Linear/logistic regression, decision trees, random forests, model training/evaluation code, cross-validation, feature scaling/encoding\",\"freeCodeCamp — \\\"Machine Learning with Python and Scikit-Learn\\\" (Aakash N S, ~18h), free YouTube, hands-on\",\"Search \\\"scikit-learn crash course\\\"\",\"🔴\"]"
+          }
+        ],
+        "raw": "## MODULE 7 — Machine Learning Fundamentals 🔴\n\n**Objective:** understand and defend the ML workflow end to end — not research-depth math, workflow fluency.\n\n| Unit | Concepts inside it | Primary resource | Secondary | Tier |\n|---|---|---|---|---|\n| 7.1 Core ML Concepts | Supervised vs. unsupervised learning, train/test split, overfitting vs. underfitting, bias-variance trade-off, evaluation metrics (accuracy, precision/recall, RMSE) | StatQuest with Josh Starmer (YouTube channel), free — short 5–15 min videos on *why* each concept works | Watch alongside 7.2, not instead of it | 🔴 |\n| 7.2 scikit-learn Practical | Linear/logistic regression, decision trees, random forests, model training/evaluation code, cross-validation, feature scaling/encoding | freeCodeCamp — \"Machine Learning with Python and Scikit-Learn\" (Aakash N S, ~18h), free YouTube, hands-on | Search \"scikit-learn crash course\" | 🔴 |\n\n**\"Done\" for this module:** one completed, documented ML mini-project on a real (e.g. Kaggle) dataset — the point isn't model quality, it's proving you understand the full workflow: data → split → train → evaluate → iterate.\n\n---\n\n"
+      },
+      {
+        "id": "module-8",
+        "number": 8,
+        "title": "LLM & Generative AI Engineering",
+        "tier": "essential",
+        "objective": "the actual point of this whole syllabus — go from \"understands the concept\" to \"can build and defend it.\" Sequenced deliberately: prompting → embeddings → RAG from scratch → RAG with a real vector DB → LangChain → agents → MCP.",
+        "units": [
+          {
+            "id": "8.1",
+            "moduleNumber": 8,
+            "title": "Prompt Engineering",
+            "concepts": [
+              "Zero-shot vs. few-shot prompting",
+              "chain-of-thought",
+              "system vs. user prompts",
+              "structured/JSON outputs",
+              "prompt evaluation"
+            ],
+            "primaryResource": "DeepLearning.AI — \"ChatGPT Prompt Engineering for Developers\", free (email signup), ~1.5h, taught by Andrew Ng + an OpenAI researcher",
+            "secondaryResource": "—",
+            "tier": "essential",
+            "raw": "[\"8.1 Prompt Engineering\",\"Zero-shot vs. few-shot prompting, chain-of-thought, system vs. user prompts, structured/JSON outputs, prompt evaluation\",\"DeepLearning.AI — \\\"ChatGPT Prompt Engineering for Developers\\\", free (email signup), ~1.5h, taught by Andrew Ng + an OpenAI researcher\",\"—\",\"🔴\"]"
+          },
+          {
+            "id": "8.2",
+            "moduleNumber": 8,
+            "title": "Embeddings & Semantic Search",
+            "concepts": [
+              "What an embedding actually is",
+              "cosine similarity",
+              "comparing embedding models",
+              "dense vs. sparse retrieval"
+            ],
+            "primaryResource": "Covered inside the RAG-from-scratch resource below — don't learn this in isolation, learn it while building",
+            "secondaryResource": "—",
+            "tier": "essential",
+            "raw": "[\"8.2 Embeddings & Semantic Search\",\"What an embedding actually is, cosine similarity, comparing embedding models, dense vs. sparse retrieval\",\"Covered inside the RAG-from-scratch resource below — don't learn this in isolation, learn it while building\",\"—\",\"🔴\"]"
+          },
+          {
+            "id": "8.3",
+            "moduleNumber": 8,
+            "title": "RAG — From Scratch",
+            "concepts": [
+              "Chunking strategies",
+              "building a retriever by hand (no framework)",
+              "grounding generation in retrieved context",
+              "hybrid keyword+semantic search"
+            ],
+            "primaryResource": "Search \"Learn RAG From Scratch\" — a free YouTube tutorial by a LangChain engineer, deliberately framework-free so you understand the mechanics first",
+            "secondaryResource": "Venelin Valkov — \"What is RAG? The Complete Tutorial: From Scratch to Deployed API on Production\" (free YouTube) — goes further: hand-built retriever → LangChain refactor → FastAPI → Docker",
+            "tier": "essential",
+            "raw": "[\"8.3 RAG — From Scratch\",\"Chunking strategies, building a retriever by hand (no framework), grounding generation in retrieved context, hybrid keyword+semantic search\",\"Search \\\"Learn RAG From Scratch\\\" — a free YouTube tutorial by a LangChain engineer, deliberately framework-free so you understand the mechanics first\",\"Venelin Valkov — \\\"What is RAG? The Complete Tutorial: From Scratch to Deployed API on Production\\\" (free YouTube) — goes further: hand-built retriever → LangChain refactor → FastAPI → Docker\",\"🔴\"]"
+          },
+          {
+            "id": "8.4",
+            "moduleNumber": 8,
+            "title": "Vector Databases",
+            "concepts": [
+              "Indexing basics",
+              "similarity search at the database level",
+              "when to use Chroma vs. pgvector vs. a managed service"
+            ],
+            "primaryResource": "Chroma's own docs (trychroma.com) for the easiest first prototype; pgvector's GitHub docs for the Postgres-backed version (reuses Module 2)",
+            "secondaryResource": "Krish Naik's RAG crash course (YouTube, free) for an alternate walkthrough",
+            "tier": "essential",
+            "raw": "[\"8.4 Vector Databases\",\"Indexing basics, similarity search at the database level, when to use Chroma vs. pgvector vs. a managed service\",\"Chroma's own docs (trychroma.com) for the easiest first prototype; pgvector's GitHub docs for the Postgres-backed version (reuses Module 2)\",\"Krish Naik's RAG crash course (YouTube, free) for an alternate walkthrough\",\"🔴\"]"
+          },
+          {
+            "id": "8.5",
+            "moduleNumber": 8,
+            "title": "LangChain Fundamentals",
+            "concepts": [
+              "Chains",
+              "document loaders",
+              "retrievers",
+              "runnables",
+              "prompt templates"
+            ],
+            "primaryResource": "docs.langchain.com (official tutorials) — authoritative, stays current as the framework changes fast",
+            "secondaryResource": "—",
+            "tier": "essential",
+            "raw": "[\"8.5 LangChain Fundamentals\",\"Chains, document loaders, retrievers, runnables, prompt templates\",\"docs.langchain.com (official tutorials) — authoritative, stays current as the framework changes fast\",\"—\",\"🔴\"]"
+          },
+          {
+            "id": "8.6",
+            "moduleNumber": 8,
+            "title": "AI Agents & Tool-Calling",
+            "concepts": [
+              "Function/tool-calling primitives (the core mechanism under every agent framework)",
+              "the ReAct pattern (reason → act → observe)"
+            ],
+            "primaryResource": "Krish Naik — \"Agentic AI with LangGraph and MCP Crash Course\" (~2.5h, free YouTube) — covers this and the next two units in one course",
+            "secondaryResource": "—",
+            "tier": "essential",
+            "raw": "[\"8.6 AI Agents & Tool-Calling\",\"Function/tool-calling primitives (the core mechanism under every agent framework), the ReAct pattern (reason → act → observe)\",\"Krish Naik — \\\"Agentic AI with LangGraph and MCP Crash Course\\\" (~2.5h, free YouTube) — covers this and the next two units in one course\",\"—\",\"🔴\"]"
+          },
+          {
+            "id": "8.7",
+            "moduleNumber": 8,
+            "title": "LangGraph & Multi-Step Agents",
+            "concepts": [
+              "State graphs (nodes/edges)",
+              "building a tool-calling chatbot",
+              "memory across turns",
+              "streaming",
+              "human-in-the-loop feedback"
+            ],
+            "primaryResource": "Same Krish Naik course as 8.6",
+            "secondaryResource": "—",
+            "tier": "essential",
+            "raw": "[\"8.7 LangGraph & Multi-Step Agents\",\"State graphs (nodes/edges), building a tool-calling chatbot, memory across turns, streaming, human-in-the-loop feedback\",\"Same Krish Naik course as 8.6\",\"—\",\"🔴\"]"
+          },
+          {
+            "id": "8.8",
+            "moduleNumber": 8,
+            "title": "Model Context Protocol (MCP)",
+            "concepts": [
+              "Why MCP exists (tool interoperability across agent frameworks)",
+              "building a trivial MCP server/tool from scratch"
+            ],
+            "primaryResource": "Same Krish Naik course as 8.6 (it ends with an MCP-server-from-scratch section); spec itself at modelcontextprotocol.io",
+            "secondaryResource": "—",
+            "tier": "recommended",
+            "raw": "[\"8.8 Model Context Protocol (MCP)\",\"Why MCP exists (tool interoperability across agent frameworks), building a trivial MCP server/tool from scratch\",\"Same Krish Naik course as 8.6 (it ends with an MCP-server-from-scratch section); spec itself at modelcontextprotocol.io\",\"—\",\"🟡\"]"
+          },
+          {
+            "id": "8.9",
+            "moduleNumber": 8,
+            "title": "LLM Evaluation & Fine-Tuning Concepts",
+            "concepts": [
+              "How to know if a RAG/agent system is actually working (eval harnesses",
+              "hallucination checks)",
+              "LoRA/PEFT — conceptual only",
+              "when fine-tuning beats RAG/prompting and vice versa"
+            ],
+            "primaryResource": "Search \"LoRA fine-tuning explained\" and \"RAG evaluation metrics explained\"",
+            "secondaryResource": "—",
+            "tier": "optional",
+            "raw": "[\"8.9 LLM Evaluation & Fine-Tuning Concepts\",\"How to know if a RAG/agent system is actually working (eval harnesses, hallucination checks), LoRA/PEFT — conceptual only, when fine-tuning beats RAG/prompting and vice versa\",\"Search \\\"LoRA fine-tuning explained\\\" and \\\"RAG evaluation metrics explained\\\"\",\"—\",\"🟢\"]"
+          }
+        ],
+        "raw": "## MODULE 8 — LLM & Generative AI Engineering 🔴 / 🟡\n\n**Objective:** the actual point of this whole syllabus — go from \"understands the concept\" to \"can build and defend it.\" Sequenced deliberately: prompting → embeddings → RAG from scratch → RAG with a real vector DB → LangChain → agents → MCP.\n\n| Unit | Concepts inside it | Primary resource | Secondary | Tier |\n|---|---|---|---|---|\n| 8.1 Prompt Engineering | Zero-shot vs. few-shot prompting, chain-of-thought, system vs. user prompts, structured/JSON outputs, prompt evaluation | DeepLearning.AI — \"ChatGPT Prompt Engineering for Developers\", free (email signup), ~1.5h, taught by Andrew Ng + an OpenAI researcher | — | 🔴 |\n| 8.2 Embeddings & Semantic Search | What an embedding actually is, cosine similarity, comparing embedding models, dense vs. sparse retrieval | Covered inside the RAG-from-scratch resource below — don't learn this in isolation, learn it while building | — | 🔴 |\n| 8.3 RAG — From Scratch | Chunking strategies, building a retriever by hand (no framework), grounding generation in retrieved context, hybrid keyword+semantic search | Search \"Learn RAG From Scratch\" — a free YouTube tutorial by a LangChain engineer, deliberately framework-free so you understand the mechanics first | Venelin Valkov — \"What is RAG? The Complete Tutorial: From Scratch to Deployed API on Production\" (free YouTube) — goes further: hand-built retriever → LangChain refactor → FastAPI → Docker | 🔴 |\n| 8.4 Vector Databases | Indexing basics, similarity search at the database level, when to use Chroma vs. pgvector vs. a managed service | Chroma's own docs (trychroma.com) for the easiest first prototype; pgvector's GitHub docs for the Postgres-backed version (reuses Module 2) | Krish Naik's RAG crash course (YouTube, free) for an alternate walkthrough | 🔴 |\n| 8.5 LangChain Fundamentals | Chains, document loaders, retrievers, runnables, prompt templates | docs.langchain.com (official tutorials) — authoritative, stays current as the framework changes fast | — | 🔴 |\n| 8.6 AI Agents & Tool-Calling | Function/tool-calling primitives (the core mechanism under every agent framework), the ReAct pattern (reason → act → observe) | Krish Naik — \"Agentic AI with LangGraph and MCP Crash Course\" (~2.5h, free YouTube) — covers this and the next two units in one course | — | 🔴 |\n| 8.7 LangGraph & Multi-Step Agents | State graphs (nodes/edges), building a tool-calling chatbot, memory across turns, streaming, human-in-the-loop feedback | Same Krish Naik course as 8.6 | — | 🔴 |\n| 8.8 Model Context Protocol (MCP) | Why MCP exists (tool interoperability across agent frameworks), building a trivial MCP server/tool from scratch | Same Krish Naik course as 8.6 (it ends with an MCP-server-from-scratch section); spec itself at modelcontextprotocol.io | — | 🟡 |\n| 8.9 LLM Evaluation & Fine-Tuning Concepts | How to know if a RAG/agent system is actually working (eval harnesses, hallucination checks), LoRA/PEFT — conceptual only, when fine-tuning beats RAG/prompting and vice versa | Search \"LoRA fine-tuning explained\" and \"RAG evaluation metrics explained\" | — | 🟢 |\n\n**\"Done\" for this module:** a public repo where you hand-built a RAG pipeline with a real vector database (8.3–8.5), and a working feature where an LLM calls a real function/tool and acts on the result, not just generates text (8.6–8.7).\n\n---\n\n"
+      },
+      {
+        "id": "module-9",
+        "number": 9,
+        "title": "Interview Readiness",
+        "tier": "essential",
+        "objective": "everything above, retrievable under pressure, in front of another person.",
+        "units": [
+          {
+            "id": "9.1",
+            "moduleNumber": 9,
+            "title": "Behavioral",
+            "concepts": [
+              "STAR method",
+              "building a story bank from real achievements you already have (Redux refactor",
+              "lead-gen automation",
+              "Physynex direction",
+              "the Module 8 rebuild itself",
+              "Croire Paints ownership)"
+            ],
+            "tier": "essential",
+            "raw": "[\"9.1 Behavioral\",\"STAR method, building a story bank from real achievements you already have (Redux refactor, lead-gen automation, Physynex direction, the Module 8 rebuild itself, Croire Paints ownership)\",\"Write out 5–6 stories in STAR format, then say them out loud, don't just read them\",\"🔴\"]"
+          },
+          {
+            "id": "9.2",
+            "moduleNumber": 9,
+            "title": "Technical Conceptual Q&A",
+            "concepts": [
+              "React internals (reconciliation",
+              "hooks rules",
+              "closures)",
+              "Node.js event loop",
+              "REST API design",
+              "caching strategies",
+              "JWT vs. sessions",
+              "CORS",
+              "plus the AI-specific set: how RAG works end-to-end",
+              "chunking trade-offs",
+              "vector vs. keyword search",
+              "hallucination mitigation",
+              "agent architecture patterns",
+              "fine-tuning vs. RAG vs. prompting"
+            ],
+            "tier": "essential",
+            "raw": "[\"9.2 Technical Conceptual Q&A\",\"React internals (reconciliation, hooks rules, closures), Node.js event loop, REST API design, caching strategies, JWT vs. sessions, CORS, plus the AI-specific set: how RAG works end-to-end, chunking trade-offs, vector vs. keyword search, hallucination mitigation, agent architecture patterns, fine-tuning vs. RAG vs. prompting\",\"You already have a 30-question prep document from an earlier session covering the full-stack half in depth — extend it with the AI-conceptual list above once Module 8 is done\",\"🔴\"]"
+          },
+          {
+            "id": "9.3",
+            "moduleNumber": 9,
+            "title": "Mock Practice",
+            "concepts": [
+              "Timed DSA under interview conditions",
+              "verbal system design",
+              "recorded behavioral answers"
+            ],
+            "tier": "essential",
+            "raw": "[\"9.3 Mock Practice\",\"Timed DSA under interview conditions, verbal system design, recorded behavioral answers\",\"Pramp (free, peer-matched) or Interviewing.io (free tier); Claude is also a free, always-available option for drilling between scheduled mocks\",\"🔴\"]"
+          }
+        ],
+        "raw": "## MODULE 9 — Interview Readiness 🔴\n\n**Objective:** everything above, retrievable under pressure, in front of another person.\n\n| Unit | Concepts inside it | Approach | Tier |\n|---|---|---|---|\n| 9.1 Behavioral | STAR method, building a story bank from real achievements you already have (Redux refactor, lead-gen automation, Physynex direction, the Module 8 rebuild itself, Croire Paints ownership) | Write out 5–6 stories in STAR format, then say them out loud, don't just read them | 🔴 |\n| 9.2 Technical Conceptual Q&A | React internals (reconciliation, hooks rules, closures), Node.js event loop, REST API design, caching strategies, JWT vs. sessions, CORS, plus the AI-specific set: how RAG works end-to-end, chunking trade-offs, vector vs. keyword search, hallucination mitigation, agent architecture patterns, fine-tuning vs. RAG vs. prompting | You already have a 30-question prep document from an earlier session covering the full-stack half in depth — extend it with the AI-conceptual list above once Module 8 is done | 🔴 |\n| 9.3 Mock Practice | Timed DSA under interview conditions, verbal system design, recorded behavioral answers | Pramp (free, peer-matched) or Interviewing.io (free tier); Claude is also a free, always-available option for drilling between scheduled mocks | 🔴 |\n\n---\n\n"
+      }
+    ],
+    "appendixChecklist": [
+      {
+        "moduleTitle": "Module 1 — DSA",
+        "items": [
+          {
+            "id": "checklist-0",
+            "text": "1.1 Complexity Analysis",
+            "checked": false
+          },
+          {
+            "id": "checklist-1",
+            "text": "1.2 Arrays & Hashing",
+            "checked": false
+          },
+          {
+            "id": "checklist-2",
+            "text": "1.3 Two Pointers",
+            "checked": false
+          },
+          {
+            "id": "checklist-3",
+            "text": "1.4 Sliding Window",
+            "checked": false
+          },
+          {
+            "id": "checklist-4",
+            "text": "1.5 Stack",
+            "checked": false
+          },
+          {
+            "id": "checklist-5",
+            "text": "1.6 Binary Search",
+            "checked": false
+          },
+          {
+            "id": "checklist-6",
+            "text": "1.7 Linked List",
+            "checked": false
+          },
+          {
+            "id": "checklist-7",
+            "text": "1.8 Trees",
+            "checked": false
+          },
+          {
+            "id": "checklist-8",
+            "text": "1.9 Tries",
+            "checked": false
+          },
+          {
+            "id": "checklist-9",
+            "text": "1.10 Heap / Priority Queue",
+            "checked": false
+          },
+          {
+            "id": "checklist-10",
+            "text": "1.11 Backtracking",
+            "checked": false
+          },
+          {
+            "id": "checklist-11",
+            "text": "1.12 Intervals",
+            "checked": false
+          },
+          {
+            "id": "checklist-12",
+            "text": "1.13 Graphs",
+            "checked": false
+          },
+          {
+            "id": "checklist-13",
+            "text": "1.14 Advanced Graphs",
+            "checked": false
+          },
+          {
+            "id": "checklist-14",
+            "text": "1.15 Greedy",
+            "checked": false
+          },
+          {
+            "id": "checklist-15",
+            "text": "1.16 1-D Dynamic Programming",
+            "checked": false
+          },
+          {
+            "id": "checklist-16",
+            "text": "1.17 2-D Dynamic Programming",
+            "checked": false
+          },
+          {
+            "id": "checklist-17",
+            "text": "1.18 Bit Manipulation & Math",
+            "checked": false
+          }
+        ]
+      },
+      {
+        "moduleTitle": "Module 2 — Databases",
+        "items": [
+          {
+            "id": "checklist-18",
+            "text": "2.1 SQL Fundamentals",
+            "checked": false
+          },
+          {
+            "id": "checklist-19",
+            "text": "2.2 PostgreSQL & Database Design",
+            "checked": false
+          },
+          {
+            "id": "checklist-20",
+            "text": "2.3 Redis & Caching",
+            "checked": false
+          }
+        ]
+      },
+      {
+        "moduleTitle": "Module 3 — Testing",
+        "items": [
+          {
+            "id": "checklist-21",
+            "text": "3.1 Unit Testing (Jest)",
+            "checked": false
+          },
+          {
+            "id": "checklist-22",
+            "text": "3.2 Component/Integration Testing (RTL)",
+            "checked": false
+          }
+        ]
+      },
+      {
+        "moduleTitle": "Module 4 — DevOps & Cloud",
+        "items": [
+          {
+            "id": "checklist-23",
+            "text": "4.1 Docker",
+            "checked": false
+          },
+          {
+            "id": "checklist-24",
+            "text": "4.2 AWS Fundamentals",
+            "checked": false
+          },
+          {
+            "id": "checklist-25",
+            "text": "4.3 AWS Hands-On Deployment",
+            "checked": false
+          },
+          {
+            "id": "checklist-26",
+            "text": "4.4 CI/CD & Observability",
+            "checked": false
+          }
+        ]
+      },
+      {
+        "moduleTitle": "Module 5 — System Design",
+        "items": [
+          {
+            "id": "checklist-27",
+            "text": "5.1 Core Concepts",
+            "checked": false
+          },
+          {
+            "id": "checklist-28",
+            "text": "5.2 Networking & APIs",
+            "checked": false
+          },
+          {
+            "id": "checklist-29",
+            "text": "5.3 Data & Storage at Scale",
+            "checked": false
+          },
+          {
+            "id": "checklist-30",
+            "text": "5.4 Async & Messaging",
+            "checked": false
+          },
+          {
+            "id": "checklist-31",
+            "text": "5.5 Classic Design Problems",
+            "checked": false
+          }
+        ]
+      },
+      {
+        "moduleTitle": "Module 6 — Python & Data Foundations",
+        "items": [
+          {
+            "id": "checklist-32",
+            "text": "6.1 Python Core Language",
+            "checked": false
+          },
+          {
+            "id": "checklist-33",
+            "text": "6.2 NumPy & Pandas",
+            "checked": false
+          }
+        ]
+      },
+      {
+        "moduleTitle": "Module 7 — Machine Learning Fundamentals",
+        "items": [
+          {
+            "id": "checklist-34",
+            "text": "7.1 Core ML Concepts",
+            "checked": false
+          },
+          {
+            "id": "checklist-35",
+            "text": "7.2 scikit-learn Practical",
+            "checked": false
+          }
+        ]
+      },
+      {
+        "moduleTitle": "Module 8 — LLM & Generative AI Engineering",
+        "items": [
+          {
+            "id": "checklist-36",
+            "text": "8.1 Prompt Engineering",
+            "checked": false
+          },
+          {
+            "id": "checklist-37",
+            "text": "8.2 Embeddings & Semantic Search",
+            "checked": false
+          },
+          {
+            "id": "checklist-38",
+            "text": "8.3 RAG — From Scratch",
+            "checked": false
+          },
+          {
+            "id": "checklist-39",
+            "text": "8.4 Vector Databases",
+            "checked": false
+          },
+          {
+            "id": "checklist-40",
+            "text": "8.5 LangChain Fundamentals",
+            "checked": false
+          },
+          {
+            "id": "checklist-41",
+            "text": "8.6 AI Agents & Tool-Calling",
+            "checked": false
+          },
+          {
+            "id": "checklist-42",
+            "text": "8.7 LangGraph & Multi-Step Agents",
+            "checked": false
+          },
+          {
+            "id": "checklist-43",
+            "text": "8.8 Model Context Protocol (MCP)",
+            "checked": false
+          },
+          {
+            "id": "checklist-44",
+            "text": "8.9 LLM Evaluation & Fine-Tuning Concepts",
+            "checked": false
+          }
+        ]
+      },
+      {
+        "moduleTitle": "Module 9 — Interview Readiness",
+        "items": [
+          {
+            "id": "checklist-45",
+            "text": "9.1 Behavioral",
+            "checked": false
+          },
+          {
+            "id": "checklist-46",
+            "text": "9.2 Technical Conceptual Q&A",
+            "checked": false
+          },
+          {
+            "id": "checklist-47",
+            "text": "9.3 Mock Practice",
+            "checked": false
+          }
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "id": "how-to-use-this-document",
+        "title": "How to Use This Document",
+        "level": 2,
+        "contentMarkdown": "## How to Use This Document\n\n- Each **Module** is a subject area. Each **Unit** inside it is one sitting's worth of learning — small enough to search for and finish, specific enough that the search actually returns the right thing.\n- Every unit lists: the **exact concepts** inside it, the **primary resource** (verified, not guessed), a **secondary resource** if the first doesn't click, and what **\"done\" looks like** (problems solved / thing built / question you can now answer).\n- **Tier** marks priority: 🔴 Essential (never skip) · 🟡 Recommended (strong differentiator) · 🟢 Optional (nice to have). Matches Part 9 of the roadmap — if time gets tight, drop 🟢 first, then 🟡, never 🔴.\n- Sequencing matters — modules are numbered in the order that makes each one easiest to learn (e.g., SQL before RAG, Python before ML, RAG before Agents). Follow the order within a module; you can interleave modules the way the roadmap's calendar does.\n- If a unit's resource isn't working for you, don't force it — the \"if this doesn't land\" search term is there specifically so you can find a second teacher without losing the thread.\n\n---\n\n"
+      }
+    ]
+  },
+  "links": [
+    {
+      "weekId": "week-1",
+      "monthId": "month-1",
+      "taskText": "Arrays & Hashing (~12 problems)",
+      "unitId": "1.2",
+      "moduleNumber": 1,
+      "score": 3,
+      "matchedTerm": "problems"
+    },
+    {
+      "weekId": "week-1",
+      "monthId": "month-1",
+      "taskText": "Jest fundamentals — unit test a few existing components",
+      "unitId": "3.1",
+      "moduleNumber": 3,
+      "score": 3,
+      "matchedTerm": "unit"
+    },
+    {
+      "weekId": "week-1",
+      "monthId": "month-1",
+      "taskText": "Python syntax, data types, control flow (fast — you already think like a programmer)",
+      "unitId": "6.1",
+      "moduleNumber": 6,
+      "score": 6,
+      "matchedTerm": "control"
+    },
+    {
+      "weekId": "week-2",
+      "monthId": "month-1",
+      "taskText": "Arrays & Hashing cont. + Two Pointers start (~13 problems)",
+      "unitId": "1.3",
+      "moduleNumber": 1,
+      "score": 5,
+      "matchedTerm": "Two Pointers"
+    },
+    {
+      "weekId": "week-2",
+      "monthId": "month-1",
+      "taskText": "React Testing Library — test user interactions, not implementation details",
+      "unitId": "3.2",
+      "moduleNumber": 3,
+      "score": 3,
+      "matchedTerm": "implementation"
+    },
+    {
+      "weekId": "week-2",
+      "monthId": "month-1",
+      "taskText": "Python: functions, OOP basics, virtual environments, pip",
+      "unitId": "6.1",
+      "moduleNumber": 6,
+      "score": 4,
+      "matchedTerm": "environments"
+    },
+    {
+      "weekId": "week-3",
+      "monthId": "month-1",
+      "taskText": "Two Pointers cont. (~10 problems)",
+      "unitId": "1.3",
+      "moduleNumber": 1,
+      "score": 4,
+      "matchedTerm": "Two Pointers"
+    },
+    {
+      "weekId": "week-3",
+      "monthId": "month-1",
+      "taskText": "PostgreSQL setup + schema design, primary/foreign keys",
+      "unitId": "2.2",
+      "moduleNumber": 2,
+      "score": 6,
+      "matchedTerm": "postgresql"
+    },
+    {
+      "weekId": "week-3",
+      "monthId": "month-1",
+      "taskText": "Python: file I/O, JSON handling, requests library, working with APIs",
+      "unitId": "6.1",
+      "moduleNumber": 6,
+      "score": 6,
+      "matchedTerm": "handling"
+    },
+    {
+      "weekId": "week-4",
+      "monthId": "month-1",
+      "taskText": "Review + fill gaps (~5 problems, revisit misses)",
+      "unitId": "1.2",
+      "moduleNumber": 1,
+      "score": 1,
+      "matchedTerm": "problems"
+    },
+    {
+      "weekId": "week-4",
+      "monthId": "month-1",
+      "taskText": "SQL: joins, indexes, normalization basics; write queries against your own schema",
+      "unitId": "2.2",
+      "moduleNumber": 2,
+      "score": 1,
+      "matchedTerm": "normalization"
+    },
+    {
+      "weekId": "week-4",
+      "monthId": "month-1",
+      "taskText": "Small Python CLI project (below)",
+      "unitId": "4.3",
+      "moduleNumber": 4,
+      "score": 1,
+      "matchedTerm": "project"
+    },
+    {
+      "weekId": "week-5",
+      "monthId": "month-2",
+      "taskText": "Sliding Window (~8 problems)",
+      "unitId": "1.4",
+      "moduleNumber": 1,
+      "score": 6,
+      "matchedTerm": "Sliding Window"
+    },
+    {
+      "weekId": "week-5",
+      "monthId": "month-2",
+      "taskText": "Docker fundamentals — containerize an existing Node/Next app",
+      "unitId": "4.1",
+      "moduleNumber": 4,
+      "score": 5,
+      "matchedTerm": "Docker"
+    },
+    {
+      "weekId": "week-5",
+      "monthId": "month-2",
+      "taskText": "NumPy + Pandas basics",
+      "unitId": "6.2",
+      "moduleNumber": 6,
+      "score": 2,
+      "matchedTerm": "pandas"
+    },
+    {
+      "weekId": "week-6",
+      "monthId": "month-2",
+      "taskText": "Stack (~10 problems)",
+      "unitId": "1.5",
+      "moduleNumber": 1,
+      "score": 4,
+      "matchedTerm": "Stack"
+    },
+    {
+      "weekId": "week-6",
+      "monthId": "month-2",
+      "taskText": "Docker Compose (multi-container: app + Postgres)",
+      "unitId": "4.1",
+      "moduleNumber": 4,
+      "score": 7,
+      "matchedTerm": "Docker"
+    },
+    {
+      "weekId": "week-6",
+      "monthId": "month-2",
+      "taskText": "Pandas: cleaning and exploring a real dataset",
+      "unitId": "6.2",
+      "moduleNumber": 6,
+      "score": 2,
+      "matchedTerm": "cleaning"
+    },
+    {
+      "weekId": "week-7",
+      "monthId": "month-2",
+      "taskText": "Binary Search (~10 problems)",
+      "unitId": "1.6",
+      "moduleNumber": 1,
+      "score": 5,
+      "matchedTerm": "Binary Search"
+    },
+    {
+      "weekId": "week-7",
+      "monthId": "month-2",
+      "taskText": "Deploy the containerized app (AWS free tier — EC2 or Elastic Beanstalk; or Render/Railway if you want a gentler on-ramp first)",
+      "unitId": "4.2",
+      "moduleNumber": 4,
+      "score": 4,
+      "matchedTerm": "beanstalk"
+    },
+    {
+      "weekId": "week-7",
+      "monthId": "month-2",
+      "taskText": "scikit-learn: train/test split, a basic classifier, evaluation metrics",
+      "unitId": "7.1",
+      "moduleNumber": 7,
+      "score": 5,
+      "matchedTerm": "evaluation"
+    },
+    {
+      "weekId": "week-8",
+      "monthId": "month-2",
+      "taskText": "Linked List (~12 problems)",
+      "unitId": "1.7",
+      "moduleNumber": 1,
+      "score": 5,
+      "matchedTerm": "Linked List"
+    },
+    {
+      "weekId": "week-8",
+      "monthId": "month-2",
+      "taskText": "Redis basics — add a caching layer to something you've built",
+      "unitId": "2.3",
+      "moduleNumber": 2,
+      "score": 2,
+      "matchedTerm": "caching"
+    },
+    {
+      "weekId": "week-8",
+      "monthId": "month-2",
+      "taskText": "\"ChatGPT Prompt Engineering for Developers\" (DeepLearning.AI, free, ~1.5h) + start the LangChain short course",
+      "unitId": "8.1",
+      "moduleNumber": 8,
+      "score": 6,
+      "matchedTerm": "Prompt Engineering"
+    },
+    {
+      "weekId": "week-9",
+      "monthId": "month-3",
+      "taskText": "Trees (~10 problems)",
+      "unitId": "1.8",
+      "moduleNumber": 1,
+      "score": 5,
+      "matchedTerm": "Trees"
+    },
+    {
+      "weekId": "week-9",
+      "monthId": "month-3",
+      "taskText": "System design: scalability, caching, load balancing, CAP theorem (concepts only)",
+      "unitId": "5.5",
+      "moduleNumber": 5,
+      "score": 2,
+      "matchedTerm": "design"
+    },
+    {
+      "weekId": "week-9",
+      "monthId": "month-3",
+      "taskText": "Embeddings deep-dive: how they're generated, what \"similarity\" means, chunking strategies",
+      "unitId": "8.2",
+      "moduleNumber": 8,
+      "score": 3,
+      "matchedTerm": "embeddings"
+    },
+    {
+      "weekId": "week-10",
+      "monthId": "month-3",
+      "taskText": "Trees cont. (~8 problems)",
+      "unitId": "1.8",
+      "moduleNumber": 1,
+      "score": 5,
+      "matchedTerm": "Trees"
+    },
+    {
+      "weekId": "week-10",
+      "monthId": "month-3",
+      "taskText": "Practice designing: URL shortener, rate limiter (write it out, don't just read about it)",
+      "unitId": "5.5",
+      "moduleNumber": 5,
+      "score": 4,
+      "matchedTerm": "shortener"
+    },
+    {
+      "weekId": "week-10",
+      "monthId": "month-3",
+      "taskText": "Vector databases: start with Chroma (fastest path to a working prototype)",
+      "unitId": "8.4",
+      "moduleNumber": 8,
+      "score": 7,
+      "matchedTerm": "Vector Databases"
+    },
+    {
+      "weekId": "week-11",
+      "monthId": "month-3",
+      "taskText": "Tries + Heap (~10 problems)",
+      "unitId": "1.9",
+      "moduleNumber": 1,
+      "score": 4,
+      "matchedTerm": "Tries"
+    },
+    {
+      "weekId": "week-11",
+      "monthId": "month-3",
+      "taskText": "Practice designing: a basic chat app backend",
+      "unitId": "5.5",
+      "moduleNumber": 5,
+      "score": 2,
+      "matchedTerm": "design"
+    },
+    {
+      "weekId": "week-11",
+      "monthId": "month-3",
+      "taskText": "LangChain fundamentals — retrieval chains, document loaders",
+      "unitId": "8.5",
+      "moduleNumber": 8,
+      "score": 7,
+      "matchedTerm": "LangChain Fundamentals"
+    },
+    {
+      "weekId": "week-12",
+      "monthId": "month-3",
+      "taskText": "Heap cont. + review (~5 problems)",
+      "unitId": "1.2",
+      "moduleNumber": 1,
+      "score": 1,
+      "matchedTerm": "problems"
+    },
+    {
+      "weekId": "week-12",
+      "monthId": "month-3",
+      "taskText": "Build: rebuild Physynex's retrieval pipeline yourself, from scratch, with a real vector database — same requirements, your own code this time",
+      "unitId": "9.1",
+      "moduleNumber": 9,
+      "score": 3,
+      "matchedTerm": "physynex"
+    },
+    {
+      "weekId": "week-13",
+      "monthId": "month-4",
+      "taskText": "Graphs — BFS/DFS (~8 problems)",
+      "unitId": "1.13",
+      "moduleNumber": 1,
+      "score": 6,
+      "matchedTerm": "Graphs"
+    },
+    {
+      "weekId": "week-13",
+      "monthId": "month-4",
+      "taskText": "WebSockets basics (real-time feature on an existing project)",
+      "unitId": "4.3",
+      "moduleNumber": 4,
+      "score": 2,
+      "matchedTerm": "project"
+    },
+    {
+      "weekId": "week-13",
+      "monthId": "month-4",
+      "taskText": "Function/tool calling with LLM APIs — the core primitive under every agent framework",
+      "unitId": "8.6",
+      "moduleNumber": 8,
+      "score": 7,
+      "matchedTerm": "framework"
+    },
+    {
+      "weekId": "week-14",
+      "monthId": "month-4",
+      "taskText": "Graphs cont. (~8 problems)",
+      "unitId": "1.13",
+      "moduleNumber": 1,
+      "score": 6,
+      "matchedTerm": "Graphs"
+    },
+    {
+      "weekId": "week-14",
+      "monthId": "month-4",
+      "taskText": "Basic observability — structured logging + error tracking (Sentry or similar) on a deployed project",
+      "unitId": "4.4",
+      "moduleNumber": 4,
+      "score": 7,
+      "matchedTerm": "observability"
+    },
+    {
+      "weekId": "week-14",
+      "monthId": "month-4",
+      "taskText": "LangGraph basics — state, cycles, multi-step reasoning",
+      "unitId": "8.7",
+      "moduleNumber": 8,
+      "score": 4,
+      "matchedTerm": "langgraph"
+    },
+    {
+      "weekId": "week-15",
+      "monthId": "month-4",
+      "taskText": "Advanced Graphs (~8 problems)",
+      "unitId": "1.13",
+      "moduleNumber": 1,
+      "score": 6,
+      "matchedTerm": "Graphs"
+    },
+    {
+      "weekId": "week-15",
+      "monthId": "month-4",
+      "taskText": "Model Context Protocol (MCP) — read the spec, understand why it exists, build one trivial MCP tool",
+      "unitId": "8.8",
+      "moduleNumber": 8,
+      "score": 6,
+      "matchedTerm": "protocol"
+    },
+    {
+      "weekId": "week-16",
+      "monthId": "month-4",
+      "taskText": "Greedy (~8 problems)",
+      "unitId": "1.15",
+      "moduleNumber": 1,
+      "score": 4,
+      "matchedTerm": "Greedy"
+    },
+    {
+      "weekId": "week-16",
+      "monthId": "month-4",
+      "taskText": "Build: an agentic feature with real tool-calling",
+      "unitId": "8.6",
+      "moduleNumber": 8,
+      "score": 3,
+      "matchedTerm": "calling"
+    },
+    {
+      "weekId": "week-17",
+      "monthId": "month-5",
+      "taskText": "1-D DP intro (~8 problems)",
+      "unitId": "1.2",
+      "moduleNumber": 1,
+      "score": 1,
+      "matchedTerm": "problems"
+    },
+    {
+      "weekId": "week-17",
+      "monthId": "month-5",
+      "taskText": "Polish pass: add missing tests, tighten READMEs across all projects",
+      "unitId": "4.3",
+      "moduleNumber": 4,
+      "score": 1,
+      "matchedTerm": "project"
+    },
+    {
+      "weekId": "week-17",
+      "monthId": "month-5",
+      "taskText": "LLM evaluation basics — how to know if your RAG/agent is actually working well",
+      "unitId": "8.9",
+      "moduleNumber": 8,
+      "score": 6,
+      "matchedTerm": "evaluation"
+    },
+    {
+      "weekId": "week-18",
+      "monthId": "month-5",
+      "taskText": "1-D DP cont. (~7 problems)",
+      "unitId": "1.2",
+      "moduleNumber": 1,
+      "score": 1,
+      "matchedTerm": "problems"
+    },
+    {
+      "weekId": "week-18",
+      "monthId": "month-5",
+      "taskText": "Accessibility + performance audit on your best project",
+      "unitId": "4.3",
+      "moduleNumber": 4,
+      "score": 1,
+      "matchedTerm": "project"
+    },
+    {
+      "weekId": "week-18",
+      "monthId": "month-5",
+      "taskText": "Fine-tuning concepts — LoRA/PEFT, conceptual only (what it's for, when RAG beats it)",
+      "unitId": "8.9",
+      "moduleNumber": 8,
+      "score": 7,
+      "matchedTerm": "conceptual"
+    },
+    {
+      "weekId": "week-19",
+      "monthId": "month-5",
+      "taskText": "2-D DP (~7 problems)",
+      "unitId": "1.2",
+      "moduleNumber": 1,
+      "score": 1,
+      "matchedTerm": "problems"
+    },
+    {
+      "weekId": "week-20",
+      "monthId": "month-5",
+      "taskText": "2-D DP cont. + Bit Manipulation (~8 problems)",
+      "unitId": "1.2",
+      "moduleNumber": 1,
+      "score": 1,
+      "matchedTerm": "problems"
+    },
+    {
+      "weekId": "week-21",
+      "monthId": "month-6",
+      "taskText": "Remaining topics (Bit Manipulation, Math) + timed practice (~10 problems)",
+      "unitId": "1.18",
+      "moduleNumber": 1,
+      "score": 2,
+      "matchedTerm": "manipulation"
+    },
+    {
+      "weekId": "week-21",
+      "monthId": "month-6",
+      "taskText": "2 more mock designs (chat app, feed system)",
+      "unitId": "5.5",
+      "moduleNumber": 5,
+      "score": 4,
+      "matchedTerm": "design"
+    },
+    {
+      "weekId": "week-21",
+      "monthId": "month-6",
+      "taskText": "Finalize STAR stories from real bullets",
+      "unitId": "9.1",
+      "moduleNumber": 9,
+      "score": 2,
+      "matchedTerm": "star"
+    },
+    {
+      "weekId": "week-22",
+      "monthId": "month-6",
+      "taskText": "Timed mixed practice, company-tagged sets (~10 problems)",
+      "unitId": "1.2",
+      "moduleNumber": 1,
+      "score": 1,
+      "matchedTerm": "problems"
+    },
+    {
+      "weekId": "week-22",
+      "monthId": "month-6",
+      "taskText": "Mock design with a peer or on Pramp",
+      "unitId": "9.3",
+      "moduleNumber": 9,
+      "score": 2,
+      "matchedTerm": "design"
+    },
+    {
+      "weekId": "week-23",
+      "monthId": "month-6",
+      "taskText": "Weak-topic remediation (~8 problems)",
+      "unitId": "1.2",
+      "moduleNumber": 1,
+      "score": 1,
+      "matchedTerm": "problems"
+    },
+    {
+      "weekId": "week-23",
+      "monthId": "month-6",
+      "taskText": "Final review of core building blocks",
+      "unitId": "8.3",
+      "moduleNumber": 8,
+      "score": 1,
+      "matchedTerm": "building"
+    },
+    {
+      "weekId": "week-23",
+      "monthId": "month-6",
+      "taskText": "Mock interview #3–4",
+      "unitId": "9.3",
+      "moduleNumber": 9,
+      "score": 2,
+      "matchedTerm": "interview"
+    },
+    {
+      "weekId": "week-24",
+      "monthId": "month-6",
+      "taskText": "Light review only — protect energy for real interviews",
+      "unitId": "9.3",
+      "moduleNumber": 9,
+      "score": 1,
+      "matchedTerm": "interview"
+    },
+    {
+      "weekId": "week-24",
+      "monthId": "month-6",
+      "taskText": "Active interviewing",
+      "unitId": "9.3",
+      "moduleNumber": 9,
+      "score": 1,
+      "matchedTerm": "interview"
+    }
+  ],
+  "generatedAt": "2026-07-29T11:40:12.826Z"
+}
