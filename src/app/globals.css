@@ -111,6 +111,10 @@ body {
   outline-offset: 2px;
 }
 
+.dark [role="checkbox"]:not([aria-checked="true"]) {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
 @keyframes float-in {
   from {
     opacity: 0;
