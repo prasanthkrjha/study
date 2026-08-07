@@ -25,6 +25,7 @@ import {
   overallRoadmapProgress,
   overallSyllabusProgress,
   taskId,
+  weekProgress,
 } from "@/lib/progress";
 import { StatCard, Card } from "@/components/shared/Card";
 import { ProgressRing } from "@/components/shared/ProgressRing";
@@ -44,6 +45,7 @@ export default function DashboardPage() {
   const syllabusP = overallSyllabusProgress(completed);
 
   const cw = currentWeek(completed);
+  const cwProgress = cw ? weekProgress(cw.week, completed) : null;
   const cmu = currentModuleUnit(completed);
 
   const totalUnits = syllabus.modules.reduce((n, m) => n + m.units.length, 0);
@@ -127,6 +129,14 @@ export default function DashboardPage() {
                   Open week
                 </Link>
               </div>
+              {cwProgress && (
+                <div className="mb-3 flex items-center gap-2">
+                  <div className="h-1.5 flex-1 overflow-hidden rounded-full bg-border">
+                    <div className="h-full rounded-full bg-accent transition-all" style={{ width: `${cwProgress.pct}%` }} />
+                  </div>
+                  <span className="shrink-0 text-xs text-muted">{cwProgress.done}/{cwProgress.total} tasks</span>
+                </div>
+              )}
               <ul className="flex flex-col gap-2">
                 {cw.week.tasks.map((task, i) => {
                   const id = taskId(cw.week.id, task.column, i);
