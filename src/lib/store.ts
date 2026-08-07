@@ -5,6 +5,12 @@ import { persist } from "zustand/middleware";
 
 export type Theme = "light" | "dark" | "system";
 
+export interface ActivityEntry {
+  id: string;
+  action: "completed" | "uncompleted";
+  timestamp: string; // ISO 8601
+}
+
 interface Note {
   id: string;
   text: string;
@@ -71,6 +77,9 @@ interface StudyStore {
   projectLinks: Record<string, { demo?: string; github?: string }>;
   setProjectLink: (projectId: string, field: "demo" | "github", value: string) => void;
 
+  // activity log — one entry per toggle, newest last
+  activityLog: ActivityEntry[];
+
   resetProgress: () => void;
 }
 
@@ -83,7 +92,16 @@ export const useStudyStore = create<StudyStore>()(
     (set, get) => ({
       completedIds: {},
       toggleCompleted: (id) => {
-        set((s) => ({ completedIds: { ...s.completedIds, [id]: !s.completedIds[id] } }));
+        set((s) => {
+          const wasCompleted = !!s.completedIds[id];
+          return {
+            completedIds: { ...s.completedIds, [id]: !wasCompleted },
+            activityLog: [
+              ...s.activityLog,
+              { id, action: wasCompleted ? "uncompleted" : "completed", timestamp: new Date().toISOString() },
+            ],
+          };
+        });
         get().recordStudyToday();
       },
       isCompleted: (id) => !!get().completedIds[id],
@@ -206,10 +224,13 @@ export const useStudyStore = create<StudyStore>()(
           },
         })),
 
+      activityLog: [],
+
       resetProgress: () =>
         set({
           completedIds: {},
           studyDates: [],
+          activityLog: [],
           pomodoro: {
             isRunning: false,
             mode: "focus",
