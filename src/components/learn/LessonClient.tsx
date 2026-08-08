@@ -11,6 +11,7 @@ import { Checkbox } from "@/components/shared/Checkbox";
 import { TierBadge } from "@/components/shared/TierBadge";
 import { BookmarkButton } from "@/components/shared/BookmarkButton";
 import { MarkdownContent } from "@/components/shared/MarkdownContent";
+import { TableOfContents } from "@/components/shared/TableOfContents";
 
 export function LessonClient({ unitId }: { unitId: string }) {
   const units = allUnits();
@@ -88,7 +89,12 @@ export function LessonClient({ unitId }: { unitId: string }) {
           )}
         </Card>
 
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4 lg:sticky lg:top-4 lg:self-start lg:max-h-[calc(100vh-2rem)] lg:overflow-y-auto">
+          {lessonMarkdown && (
+            <Card>
+              <TableOfContents markdown={lessonMarkdown} />
+            </Card>
+          )}
           {unit.practiceLinks.length > 0 && (
             <Card>
               <h2 className="mb-3 text-xs font-semibold uppercase tracking-wide text-muted">
