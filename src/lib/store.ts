@@ -80,6 +80,11 @@ interface StudyStore {
   // activity log — one entry per toggle, newest last
   activityLog: ActivityEntry[];
 
+  // DSA problem tracking — per-problem completion + optional notes
+  dsaProblemStatus: Record<string, { completed: boolean; notes: string }>;
+  toggleDsaProblem: (id: string) => void;
+  setDsaProblemNote: (id: string, notes: string) => void;
+
   resetProgress: () => void;
 }
 
@@ -226,11 +231,31 @@ export const useStudyStore = create<StudyStore>()(
 
       activityLog: [],
 
+      dsaProblemStatus: {},
+      toggleDsaProblem: (id) =>
+        set((s) => ({
+          dsaProblemStatus: {
+            ...s.dsaProblemStatus,
+            [id]: {
+              completed: !s.dsaProblemStatus[id]?.completed,
+              notes: s.dsaProblemStatus[id]?.notes ?? "",
+            },
+          },
+        })),
+      setDsaProblemNote: (id, notes) =>
+        set((s) => ({
+          dsaProblemStatus: {
+            ...s.dsaProblemStatus,
+            [id]: { completed: s.dsaProblemStatus[id]?.completed ?? false, notes },
+          },
+        })),
+
       resetProgress: () =>
         set({
           completedIds: {},
           studyDates: [],
           activityLog: [],
+          dsaProblemStatus: {},
           pomodoro: {
             isRunning: false,
             mode: "focus",
