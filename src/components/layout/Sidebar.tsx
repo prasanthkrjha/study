@@ -18,6 +18,7 @@ import {
   Settings,
   ChevronDown,
   GraduationCap,
+  Zap,
 } from "lucide-react";
 import { roadmap, syllabus } from "@/lib/data";
 import { cn } from "@/lib/utils";
@@ -54,6 +55,7 @@ export function Sidebar({ onNavigate }: { onNavigate?: () => void }) {
     { label: "Projects", href: "/projects", icon: FolderGit2 },
     { label: "Resources", href: "/resources", icon: Library },
     { label: "DSA Tracker", href: "/dsa", icon: Code2 },
+    { label: "Flashcard Quiz", href: "/quiz", icon: Zap },
     { label: "Interview Prep", href: "/interview", icon: MessagesSquare },
     { label: "Analytics", href: "/analytics", icon: BarChart3 },
     { label: "Activity", href: "/activity", icon: Activity },

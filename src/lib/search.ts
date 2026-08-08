@@ -1,4 +1,13 @@
-import { roadmap, syllabus } from "@/lib/data";
+import { lessons, roadmap, syllabus } from "@/lib/data";
+
+function slugify(text: string): string {
+  return text
+    .toLowerCase()
+    .replace(/[^\w\s-]/g, "")
+    .trim()
+    .replace(/\s+/g, "-")
+    .replace(/-+/g, "-");
+}
 
 export interface SearchItem {
   id: string;
@@ -46,6 +55,32 @@ export function buildSearchIndex(): SearchItem[] {
         href: `/learn/${unit.id}`,
         group: "Syllabus",
       });
+    }
+  }
+
+  for (const mod of syllabus.modules) {
+    for (const unit of mod.units) {
+      const md = lessons[unit.id as keyof typeof lessons];
+      if (!md) continue;
+      const headings = (md as string)
+        .split("\n")
+        .filter((line: string) => /^#{2,3}\s/.test(line))
+        .map((line: string) => {
+          const match = line.match(/^#{2,3}\s+(.+)$/);
+          if (!match) return null;
+          const text = match[1].replace(/[`*_[\]]/g, "").trim();
+          return { text, id: slugify(text) };
+        })
+        .filter(Boolean) as { text: string; id: string }[];
+      for (const h of headings) {
+        items.push({
+          id: `${unit.id}#${h.id}`,
+          title: h.text,
+          subtitle: `${unit.id} ${unit.title}`,
+          href: `/learn/${unit.id}#${h.id}`,
+          group: "Lessons",
+        });
+      }
     }
   }
 
