@@ -1,10 +1,10 @@
 "use client";
 
 import Link from "next/link";
-import { ChevronLeft, ChevronRight, ExternalLink, StickyNote, BookOpen } from "lucide-react";
+import { ChevronLeft, ChevronRight, ExternalLink, StickyNote, BookOpen, CheckCircle2, Circle } from "lucide-react";
 import { allUnits, syllabus, getLesson, linksForUnit, moduleIdForNumber } from "@/lib/data";
 import { useStudyStore } from "@/lib/store";
-import { conceptId, unitProgress } from "@/lib/progress";
+import { conceptId, lessonId, unitProgress } from "@/lib/progress";
 import { Card } from "@/components/shared/Card";
 import { ProgressRing } from "@/components/shared/ProgressRing";
 import { Checkbox } from "@/components/shared/Checkbox";
@@ -25,6 +25,8 @@ export function LessonClient({ unitId }: { unitId: string }) {
   const toggleCompleted = useStudyStore((s) => s.toggleCompleted);
   const addNote = useStudyStore((s) => s.addNote);
   const up = unitProgress(unit, completed);
+  const lid = lessonId(unit.id);
+  const lessonDone = !!completed[lid];
   const roadmapLinks = linksForUnit(unit.id);
   const lessonMarkdown = getLesson(unit.id);
 
@@ -183,6 +185,25 @@ export function LessonClient({ unitId }: { unitId: string }) {
               </div>
             </Card>
           )}
+
+          <button
+            onClick={() => toggleCompleted(lid)}
+            className={`flex items-center justify-center gap-1.5 rounded-lg border px-3 py-2 text-xs font-medium transition-colors ${
+              lessonDone
+                ? "border-accent/40 bg-accent/10 text-accent"
+                : "border-border hover:bg-surface-2"
+            }`}
+          >
+            {lessonDone ? (
+              <>
+                <CheckCircle2 className="h-3.5 w-3.5" /> Lesson marked as read
+              </>
+            ) : (
+              <>
+                <Circle className="h-3.5 w-3.5" /> Mark lesson as read
+              </>
+            )}
+          </button>
 
           <button
             onClick={() => {

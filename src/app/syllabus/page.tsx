@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { syllabus } from "@/lib/data";
 import { useStudyStore } from "@/lib/store";
-import { moduleProgress } from "@/lib/progress";
+import { lessonModuleProgress, moduleProgress } from "@/lib/progress";
 import { Card } from "@/components/shared/Card";
 import { ProgressRing } from "@/components/shared/ProgressRing";
 import { TierBadge } from "@/components/shared/TierBadge";
@@ -22,6 +22,7 @@ export default function SyllabusPage() {
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {syllabus.modules.map((mod) => {
           const mp = moduleProgress(mod, completed);
+          const lp = lessonModuleProgress(mod, completed);
           return (
             <Link key={mod.id} href={`/syllabus/${mod.id}`}>
               <Card className="flex h-full flex-col gap-3 transition hover:border-accent/40 hover:shadow-md">
@@ -37,9 +38,12 @@ export default function SyllabusPage() {
                 <p className="line-clamp-2 flex-1 text-xs text-muted">{mod.objective}</p>
                 <div className="flex items-center justify-between">
                   <TierBadge tier={mod.tier} />
-                  <span className="flex items-center gap-1 text-xs text-muted">
-                    {mod.units.length} units <ArrowRight className="h-3 w-3" />
-                  </span>
+                  <div className="flex items-center gap-3 text-xs text-muted">
+                    <span>{lp.done}/{lp.total} read</span>
+                    <span className="flex items-center gap-1">
+                      {mod.units.length} units <ArrowRight className="h-3 w-3" />
+                    </span>
+                  </div>
                 </div>
               </Card>
             </Link>

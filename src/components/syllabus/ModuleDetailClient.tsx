@@ -4,7 +4,7 @@ import Link from "next/link";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { syllabus } from "@/lib/data";
 import { useStudyStore } from "@/lib/store";
-import { moduleProgress } from "@/lib/progress";
+import { lessonModuleProgress, moduleProgress } from "@/lib/progress";
 import { Card } from "@/components/shared/Card";
 import { ProgressRing } from "@/components/shared/ProgressRing";
 import { TierBadge } from "@/components/shared/TierBadge";
@@ -18,6 +18,7 @@ export function ModuleDetailClient({ moduleId }: { moduleId: string }) {
 
   const completed = useStudyStore((s) => s.completedIds);
   const mp = moduleProgress(mod, completed);
+  const lp = lessonModuleProgress(mod, completed);
 
   return (
     <div className="flex flex-col gap-6">
@@ -52,6 +53,7 @@ export function ModuleDetailClient({ moduleId }: { moduleId: string }) {
           </div>
           <h1 className="mt-1 text-2xl font-bold tracking-tight">{mod.title}</h1>
           {mod.objective && <p className="mt-2 max-w-2xl text-sm text-muted">{mod.objective}</p>}
+          <p className="mt-1 text-xs text-muted">{lp.done}/{lp.total} lessons read</p>
         </div>
         <ProgressRing value={mp.pct} size={80} strokeWidth={7} />
       </Card>

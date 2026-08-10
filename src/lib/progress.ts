@@ -11,6 +11,10 @@ export function conceptId(unitId: string, index: number) {
   return `concept:${unitId}:${index}`;
 }
 
+export function lessonId(unitId: string) {
+  return `lesson:${unitId}`;
+}
+
 export function milestoneId(id: string) {
   return `milestone:${id}`;
 }
@@ -68,6 +72,12 @@ export function moduleProgress(mod: Module, completed: CompletedMap) {
     done += up.done;
   }
   return ratio(done, total);
+}
+
+export function lessonModuleProgress(mod: Module, completed: CompletedMap) {
+  const total = mod.units.length;
+  const done = mod.units.filter((u) => completed[lessonId(u.id)]).length;
+  return { done, total, pct: total === 0 ? 0 : Math.round((done / total) * 100) };
 }
 
 export function overallRoadmapProgress(completed: CompletedMap) {
