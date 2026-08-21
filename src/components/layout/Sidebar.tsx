@@ -5,7 +5,6 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 import {
   LayoutDashboard,
-  Map,
   BookOpen,
   FolderGit2,
   Library,
@@ -19,8 +18,9 @@ import {
   ChevronDown,
   GraduationCap,
   Zap,
+  LayoutGrid,
 } from "lucide-react";
-import { roadmap, syllabus } from "@/lib/data";
+import { syllabus } from "@/lib/data";
 import { cn } from "@/lib/utils";
 
 interface NavItem {
@@ -35,12 +35,12 @@ export function Sidebar({ onNavigate }: { onNavigate?: () => void }) {
   const navItems: NavItem[] = [
     { label: "Dashboard", href: "/", icon: LayoutDashboard },
     {
-      label: "Roadmap",
-      href: "/roadmap",
-      icon: Map,
-      children: roadmap.months.map((m) => ({
-        label: `Month ${m.number} — ${m.title}`,
-        href: `/roadmap/${m.id}`,
+      label: "Modules",
+      href: "/modules",
+      icon: LayoutGrid,
+      children: syllabus.modules.map((m) => ({
+        label: `${m.number}. ${m.title}`,
+        href: `/syllabus/${m.id}`,
       })),
     },
     {
@@ -65,7 +65,7 @@ export function Sidebar({ onNavigate }: { onNavigate?: () => void }) {
   ];
 
   const [openSections, setOpenSections] = useState<Record<string, boolean>>({
-    Roadmap: pathname.startsWith("/roadmap"),
+    Modules: pathname.startsWith("/modules") || pathname.startsWith("/syllabus"),
     Syllabus: pathname.startsWith("/syllabus"),
   });
 

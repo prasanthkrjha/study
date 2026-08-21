@@ -54,6 +54,7 @@ interface StudyStore {
   studyDates: string[]; // ISO yyyy-mm-dd, one entry per active day
   recordStudyToday: () => void;
   currentStreak: () => number;
+  longestStreak: () => number;
 
   // daily/weekly goals
   dailyGoalMinutes: number;
@@ -153,6 +154,24 @@ export const useStudyStore = create<StudyStore>()(
           }
         }
         return streak;
+      },
+      longestStreak: () => {
+        const sorted = [...get().studyDates].sort();
+        if (sorted.length === 0) return 0;
+        let max = 1;
+        let current = 1;
+        for (let i = 1; i < sorted.length; i++) {
+          const prev = new Date(sorted[i - 1]);
+          const curr = new Date(sorted[i]);
+          const diff = (curr.getTime() - prev.getTime()) / 86400000;
+          if (diff === 1) {
+            current++;
+            if (current > max) max = current;
+          } else if (diff > 1) {
+            current = 1;
+          }
+        }
+        return max;
       },
 
       dailyGoalMinutes: 120,

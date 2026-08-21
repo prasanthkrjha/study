@@ -1,8 +1,18 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useMemo, useState, useCallback } from "react";
 import { PieChart, Pie, Cell, Tooltip, ResponsiveContainer } from "recharts";
-import { Activity, CheckCircle2, XCircle, TrendingUp, CalendarDays, Clock, Filter } from "lucide-react";
+import {
+  Activity,
+  CheckCircle2,
+  XCircle,
+  TrendingUp,
+  CalendarDays,
+  Clock,
+  Filter,
+  Download,
+  Printer,
+} from "lucide-react";
 import { useStudyStore } from "@/lib/store";
 import { roadmap, syllabus } from "@/lib/data";
 import { Card, StatCard } from "@/components/shared/Card";
@@ -22,6 +32,33 @@ import { cn } from "@/lib/utils";
 const PAGE_SIZE = 50;
 
 type ActionFilter = "all" | "completed" | "uncompleted";
+type DatePreset = "all" | "today" | "yesterday" | "week" | "month" | "custom";
+
+function getPresetRange(preset: DatePreset): { from: string | null; to: string | null } {
+  const now = new Date();
+  const iso = (d: Date) => d.toISOString().slice(0, 10);
+  if (preset === "today") {
+    const t = iso(now);
+    return { from: t, to: t };
+  }
+  if (preset === "yesterday") {
+    const y = new Date(now);
+    y.setDate(y.getDate() - 1);
+    const t = iso(y);
+    return { from: t, to: t };
+  }
+  if (preset === "week") {
+    const from = new Date(now);
+    from.setDate(from.getDate() - 6);
+    return { from: iso(from), to: iso(now) };
+  }
+  if (preset === "month") {
+    const from = new Date(now);
+    from.setDate(from.getDate() - 29);
+    return { from: iso(from), to: iso(now) };
+  }
+  return { from: null, to: null };
+}
 
 function CategoryBadge({ category }: { category: string }) {
   const color = categoryColor(category);
@@ -84,6 +121,9 @@ export default function ActivityPage() {
 
   const [actionFilter, setActionFilter] = useState<ActionFilter>("all");
   const [categoryFilter, setCategoryFilter] = useState("all");
+  const [datePreset, setDatePreset] = useState<DatePreset>("all");
+  const [customFrom, setCustomFrom] = useState("");
+  const [customTo, setCustomTo] = useState("");
   const [page, setPage] = useState(1);
 
   // Resolve all entries (newest first)
@@ -101,13 +141,23 @@ export default function ActivityPage() {
     return Array.from(set).sort();
   }, [resolved]);
 
+  const dateRange = useMemo((): { from: string | null; to: string | null } => {
+    if (datePreset === "custom") return { from: customFrom || null, to: customTo || null };
+    return getPresetRange(datePreset);
+  }, [datePreset, customFrom, customTo]);
+
   const filtered = useMemo(() => {
     return resolved.filter((r) => {
       if (actionFilter !== "all" && r.entry.action !== actionFilter) return false;
       if (categoryFilter !== "all" && r.category !== categoryFilter) return false;
+      if (dateRange.from || dateRange.to) {
+        const entryDate = r.entry.timestamp.slice(0, 10);
+        if (dateRange.from && entryDate < dateRange.from) return false;
+        if (dateRange.to && entryDate > dateRange.to) return false;
+      }
       return true;
     });
-  }, [resolved, actionFilter, categoryFilter]);
+  }, [resolved, actionFilter, categoryFilter, dateRange]);
 
   const paginated = filtered.slice(0, page * PAGE_SIZE);
   const hasMore = paginated.length < filtered.length;
@@ -124,25 +174,48 @@ export default function ActivityPage() {
   );
 
   const bestDay = useMemo(() => mostProductiveDay(activityLog), [activityLog]);
-
   const avgPerDay = studyDates.length > 0 ? (totalCompletions / studyDates.length).toFixed(1) : "—";
 
-  // Pie chart data
-  const pieData = useMemo(
-    () => buildCategoryDistribution(resolved),
-    [resolved]
-  );
+  const pieData = useMemo(() => buildCategoryDistribution(resolved), [resolved]);
+  const topicDurations = useMemo(() => buildTopicDurations(activityLog, roadmap, syllabus), [activityLog]);
 
-  // Topic durations (most recent first, already sorted)
-  const topicDurations = useMemo(
-    () => buildTopicDurations(activityLog, roadmap, syllabus),
-    [activityLog]
-  );
+  // CSV download
+  const downloadCSV = useCallback(() => {
+    const rows = [
+      ["Timestamp", "Action", "Category", "Label", "ID"],
+      ...filtered.map((r) => [
+        r.entry.timestamp,
+        r.entry.action,
+        r.category,
+        `"${r.label.replace(/"/g, '""')}"`,
+        r.entry.id,
+      ]),
+    ];
+    const csv = rows.map((r) => r.join(",")).join("\n");
+    const blob = new Blob([csv], { type: "text/csv;charset=utf-8;" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = `studyos-activity-${new Date().toISOString().slice(0, 10)}.csv`;
+    a.click();
+    URL.revokeObjectURL(url);
+  }, [filtered]);
+
+  // PDF print
+  const printReport = useCallback(() => {
+    window.print();
+  }, []);
 
   return (
     <div className="flex flex-col gap-6">
-      <div>
-        <h1 className="text-2xl font-bold tracking-tight">Activity & Completion History</h1>
+      {/* Print-only header */}
+      <div className="hidden print:block mb-4">
+        <h1 className="text-2xl font-bold">StudyOS — Activity Report</h1>
+        <p className="text-sm text-gray-500">Generated: {new Date().toLocaleString()}</p>
+      </div>
+
+      <div className="print:hidden">
+        <h1 className="text-2xl font-bold tracking-tight">Activity &amp; Completion History</h1>
         <p className="mt-1 text-sm text-muted">
           Every topic you mark complete is logged here with an exact timestamp.
         </p>
@@ -172,16 +245,33 @@ export default function ActivityPage() {
         </Card>
       ) : (
         <>
-          {/* Main two-column section */}
           <div className="grid grid-cols-1 gap-4 lg:grid-cols-3">
             {/* Activity list */}
             <Card className="flex flex-col gap-3 lg:col-span-2">
               <div className="flex flex-wrap items-center justify-between gap-2">
                 <h2 className="font-semibold">Activity History</h2>
-                <span className="text-xs text-muted">{filtered.length} entries</span>
+                <div className="flex items-center gap-2">
+                  <span className="text-xs text-muted">{filtered.length} entries</span>
+                  <button
+                    onClick={downloadCSV}
+                    title="Download CSV"
+                    className="print:hidden flex items-center gap-1.5 rounded-lg border border-border px-2.5 py-1.5 text-xs text-muted hover:bg-surface-2"
+                  >
+                    <Download className="h-3.5 w-3.5" />
+                    CSV
+                  </button>
+                  <button
+                    onClick={printReport}
+                    title="Print / Save as PDF"
+                    className="print:hidden flex items-center gap-1.5 rounded-lg border border-border px-2.5 py-1.5 text-xs text-muted hover:bg-surface-2"
+                  >
+                    <Printer className="h-3.5 w-3.5" />
+                    PDF
+                  </button>
+                </div>
               </div>
 
-              {/* Filters */}
+              {/* Action filter */}
               <div className="flex flex-wrap items-center gap-2">
                 <div className="flex rounded-lg border border-border text-xs">
                   {(["all", "completed", "uncompleted"] as ActionFilter[]).map((f) => (
@@ -190,9 +280,7 @@ export default function ActivityPage() {
                       onClick={() => { setActionFilter(f); setPage(1); }}
                       className={cn(
                         "px-3 py-1.5 capitalize first:rounded-l-lg last:rounded-r-lg transition-colors",
-                        actionFilter === f
-                          ? "bg-accent text-white"
-                          : "text-muted hover:bg-surface-2"
+                        actionFilter === f ? "bg-accent text-white" : "text-muted hover:bg-surface-2"
                       )}
                     >
                       {f}
@@ -214,6 +302,44 @@ export default function ActivityPage() {
                   </select>
                 </div>
               </div>
+
+              {/* Date preset filter */}
+              <div className="flex flex-wrap gap-1.5">
+                {(["all", "today", "yesterday", "week", "month", "custom"] as DatePreset[]).map((p) => (
+                  <button
+                    key={p}
+                    onClick={() => { setDatePreset(p); setPage(1); }}
+                    className={cn(
+                      "rounded-md px-2.5 py-1 text-xs font-medium capitalize transition-colors",
+                      datePreset === p
+                        ? "bg-accent/10 text-accent"
+                        : "border border-border text-muted hover:bg-surface-2"
+                    )}
+                  >
+                    {p === "week" ? "This week" : p === "month" ? "This month" : p}
+                  </button>
+                ))}
+              </div>
+
+              {/* Custom date range */}
+              {datePreset === "custom" && (
+                <div className="flex flex-wrap items-center gap-2 rounded-lg border border-border px-3 py-2 text-xs">
+                  <label className="text-muted">From</label>
+                  <input
+                    type="date"
+                    value={customFrom}
+                    onChange={(e) => { setCustomFrom(e.target.value); setPage(1); }}
+                    className="rounded border border-border bg-surface px-2 py-1 text-xs outline-none focus:ring-1 focus:ring-accent"
+                  />
+                  <label className="text-muted">To</label>
+                  <input
+                    type="date"
+                    value={customTo}
+                    onChange={(e) => { setCustomTo(e.target.value); setPage(1); }}
+                    className="rounded border border-border bg-surface px-2 py-1 text-xs outline-none focus:ring-1 focus:ring-accent"
+                  />
+                </div>
+              )}
 
               {/* Entries */}
               <div className="flex flex-col gap-2">
@@ -275,7 +401,7 @@ export default function ActivityPage() {
             </Card>
           </div>
 
-          {/* Topic completion timeline */}
+          {/* Topic durations */}
           {topicDurations.length > 0 && (
             <Card>
               <div className="mb-4 flex items-center gap-2">
@@ -283,7 +409,6 @@ export default function ActivityPage() {
                 <h2 className="font-semibold">Time to Complete Topics</h2>
                 <span className="ml-auto text-xs text-muted">From first to last item in each topic</span>
               </div>
-
               <div className="overflow-x-auto">
                 <table className="w-full text-sm">
                   <thead>
@@ -347,6 +472,15 @@ export default function ActivityPage() {
           )}
         </>
       )}
+
+      {/* Print styles */}
+      <style>{`
+        @media print {
+          nav, button, .print\\:hidden { display: none !important; }
+          body { font-size: 12px; }
+          .print\\:block { display: block !important; }
+        }
+      `}</style>
     </div>
   );
 }
